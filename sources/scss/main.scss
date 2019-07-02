@@ -29,6 +29,10 @@ $light: #fff;
   background-color: $light !important;
 }
 
+.bg-gray {
+  background-color: $gray !important;
+}
+
 // FONT COLOR
 
 .text-primary {
@@ -52,7 +56,7 @@ $light: #fff;
   font-size: 12px !important;
 }
 
-.h7{
+.h7 {
   font-size: 14px;
 }
 
@@ -69,11 +73,10 @@ ul li {
   font-size: 4.5em;
 }
 
-.bt-underline{
+.bt-underline {
   border-top: 3px solid $primary;
   width: 60%;
-  margin: 0 auto
-  
+  margin: 0 auto;
 }
 
 .border-icon {
@@ -167,14 +170,12 @@ input[type="number"] {
 }
 
 .portal-nosotros {
-  background-image: url("./../../assets/img/08ccaf3.jpg");
+  background-image: url("./../../assets/img/enlacedetalle.png");
   background-size: cover;
   width: 100vw;
   background-position: center;
-}
-
-#header-nosotros {
-  padding: 3em;
+  position: relative;
+  top: -56px;
 }
 
 .contenedor-header-left {
@@ -183,6 +184,10 @@ input[type="number"] {
 
 .contenedor-header-right {
   padding: 7em 15em 4em 2em;
+}
+
+.contenedor-header-center {
+  padding: 7em 1em 3em 1em;
 }
 
 #cambio div.monto {
@@ -195,7 +200,7 @@ input[type="number"] {
   cursor: pointer;
 }
 
-#menu-toggle{
+#menu-toggle {
   border-radius: 50%;
   padding: 5px 10px;
 }
@@ -213,6 +218,10 @@ input[type="number"] {
 
 .tab-pane {
   padding: 1em 3em;
+}
+
+#calculo {
+  margin: 0.5em 4em 0.5em 4em;
 }
 
 .nav-pills .nav-link.active,
@@ -250,10 +259,16 @@ input[type="number"] {
 @media (max-width: 767.98px) {
   .portal-header {
     height: 56.5em;
+    padding-top: 4em;
   }
 
-  .portal-header {
+  .portal-nosotros {
+    height: 21em;
     padding-top: 4em;
+  }
+
+  .header-div {
+    height: 19em;
   }
 
   .contenedor-header-left,
@@ -267,6 +282,10 @@ input[type="number"] {
 
   .footer-al {
     text-align: center;
+  }
+
+  #calculo {
+    margin: 0.5em 0.5em 0.5em 0.5em;
   }
 
   #video .video-contenedor {
@@ -284,23 +303,22 @@ input[type="number"] {
   }
 }
 
-
 /*!
  * Start Bootstrap - Simple Sidebar (https://startbootstrap.com/template-overviews/simple-sidebar)
  * Copyright 2013-2019 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-simple-sidebar/blob/master/LICENSE)
  */
- body {
+body {
   overflow-x: hidden;
 }
 
 #sidebar-wrapper {
   min-height: 100vh;
   margin-left: -15rem;
-  -webkit-transition: margin .25s ease-out;
-  -moz-transition: margin .25s ease-out;
-  -o-transition: margin .25s ease-out;
-  transition: margin .25s ease-out;
+  -webkit-transition: margin 0.25s ease-out;
+  -moz-transition: margin 0.25s ease-out;
+  -o-transition: margin 0.25s ease-out;
+  transition: margin 0.25s ease-out;
 }
 
 #sidebar-wrapper .sidebar-heading {

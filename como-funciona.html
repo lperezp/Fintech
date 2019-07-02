@@ -80,56 +80,70 @@
                 </nav>
       
                 <div class="container-fluid">
-                    <div class="row">
-                          <div class="col-md-12">
-                          <section class="cnt-form-datos como-funciona border bg-dark m-3 mt-5">
-                              <div class="bg__light bg-calculos p-4">
-                                  <div class="container">
-                                      <div class="calculos-top">
-                                          <form class="modificar-credito modificar-datos" method="post" action="">
-                                              <input type="hidden" name="_token" value="SKyVxAF2XwmgsAQ2hmauHpOls0YwjBK6KkQRrv5M">
-                                              <div class="row">
-                                                  <div class="col-md-4 text-center">
-                                                      <h5 class="h6 text-light solicitado t-solici">¿Cuánto quieres?</h5>
-                                                      <div class="calculator">
-                                                          <a class="menos" title="Disminuir monto" href="#" id="minus_cuanto_quieres">-</a>
-                                                          <input type="number" name="cuanto_quieres" id="cuanto_quieres" class="w-50 text-right" value="">
-                                                          <a class="mas" title="Aumentar monto" href="#" id="plus_cuanto_quieres">+</a>
-                                                      </div>
-                                                  </div>
-                                                  <div class="col-md-4 text-center">
-                                                      <h5 class="h6 text-light solicitado t-intere">¿Cuántas cuotas?</h5>
-                                                      <div class="calculator">
-                                                          <a class="menos" title="Disminuir una cuota" href="#" id="minus_como_pagas">-</a>
-                                                          <input  class="w-50 text-right" name="nro_cuotas_sol" id="como_pagas" type="number" value="">
-                                                          <a class="mas" title="Aumentar una cuota" href="#" id="plus_como_pagas">+</a>
-                                                      </div>
-                                                  </div>  
-                                                  <div class="col-md-2 text-center text-light">
-                                                      <div class="inner">
-                                                          <h3 id="texto_cuotas" class="h6 cuotas t-cuota">Cuota mensual</h3>
-                                                          <h4>S/. 597.00 </h4>
-                                                      </div>
-                                                  </div>
-                                                  <div class="col-md-2 text-center">
-                                                      <button type="submit" class="btn mt-4 mb-4 bg-primary text-light font-weight-bold"><span>¡Lo Quiero!</span></button>
-                                                  </div>  
-                                              </div>
-                                          </form>
-              </div>
-              <div class="datos-calculos text-light">
-              <p class="ast">Préstamo S/ <span id="resPrestamos">500</span> <strong>+</strong> Intereses y Comisiones S/
-              <span id="resInteres">97</span> <strong>=</strong> Total a pagar S/ <span id="resTotal">597</span><br>
-              <strong>* Tasa Efectiva Mensual: </strong> <strong class="tem_int_com">16.39</strong><strong>%</strong>.
-              TCEA de <span class="valor tcea_sin_igv">518</span>%+IGV y primer vencimiento
-              el 01/08/2019 (lo podrás modificar más adelante).
-              Desembolso en 1 hora durante <strong>horario de oficina.</strong></p>
-              </div>
-              </div>
-              </div>
-              </section>
-                  </div>
+                  <div class="row" id="header">
+                    <div class="col-md-12 p-0 header-div">
+                      <div class="portal-nosotros w-100">
+                        <div class="row m-0 text-center text-white">
+                          <div class=" d-block  d-sm-block d-md-none">
+                            <button id="menu-toggle" class="btn bg-primary m-1 ml-3"><i class="fas fa-bars text-white"></i></button>
+                          </div>
+                          <div class="col-md-12 contenedor-header-center">
+                            <h1>¿Cómo funciona?</h1>
+                          </div>
+                        </div>
+                      </div>
                     </div>
+                  </div>
+                    <div class="row" id="calculo">
+                          <div class="col-md-12">
+                          <section class="cnt-form-datos como-funciona border bg-gray">
+                            <div class="bg__light bg-calculos p-4">
+                                <div class="container">
+                                    <div class="calculos-top">
+                                        <form class="modificar-credito modificar-datos" method="post" action="">
+                                            <input type="hidden" name="_token" value="SKyVxAF2XwmgsAQ2hmauHpOls0YwjBK6KkQRrv5M">
+                                            <div class="row">
+                                                <div class="col-md-4 text-center">
+                                                    <h5 class="mt-3 h6 text-light solicitado t-solici">¿Cuánto quieres?</h5>
+                                                    <div class="calculator">
+                                                        <a class="menos" title="Disminuir monto" href="#" id="minus_cuanto_quieres">-</a>
+                                                        <input type="number" name="cuanto_quieres" id="cuanto_quieres" class="w-50 text-right" value="">
+                                                        <a class="mas" title="Aumentar monto" href="#" id="plus_cuanto_quieres">+</a>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4 text-center">
+                                                    <h5 class="mt-3 h6 text-light solicitado t-intere">¿Cuántas cuotas?</h5>
+                                                    <div class="calculator">
+                                                        <a class="menos" title="Disminuir una cuota" href="#" id="minus_como_pagas">-</a>
+                                                        <input  class="w-50 text-right" name="nro_cuotas_sol" id="como_pagas" type="number" value="">
+                                                        <a class="mas" title="Aumentar una cuota" href="#" id="plus_como_pagas">+</a>
+                                                    </div>
+                                                </div>  
+                                                <div class="col-md-2 text-center text-light">
+                                                    <div class="inner">
+                                                        <h3 id="texto_cuotas" class="mt-3 h6 cuotas t-cuota">Cuota mensual</h3>
+                                                        <h4>S/. 597.00 </h4>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-2 text-center">
+                                                    <button type="submit" class="btn mt-4 mb-4 bg-primary text-light font-weight-bold"><span>¡Lo Quiero!</span></button>
+                                                </div>  
+                                            </div>
+                                        </form>
+            </div>
+            <div class="datos-calculos text-light">
+            <p class="ast">Préstamo S/ <span id="resPrestamos">500</span> <strong>+</strong> Intereses y Comisiones S/
+            <span id="resInteres">97</span> <strong>=</strong> Total a pagar S/ <span id="resTotal">597</span><br>
+            <strong>* Tasa Efectiva Mensual: </strong> <strong class="tem_int_com">16.39</strong><strong>%</strong>.
+            TCEA de <span class="valor tcea_sin_igv">518</span>%+IGV y primer vencimiento
+            el 01/08/2019 (lo podrás modificar más adelante).
+            Desembolso en 1 hora durante <strong>horario de oficina.</strong></p>
+            </div>
+            </div>
+                            </div>
+                          </section>
+                        </div>
+                      </div>
                     <div id="pasos" class="row text-center pt-5 mb-5">
                       <div class="col-md-12">
                         <h3>Tu plata en 3 simples pasos</h3>
@@ -305,62 +319,52 @@
                                     </div>
                         </div>
                     </div>
-                    <div
-                      id="aspectos-legales"
-                      class="row bg-secondary text-white text-center p-4"
-                    >
+                    <div id="aspectos-legales" class="row bg-secondary text-white text-center p-4">
                       <div class="col-12 pt-4">
                         <h3 class="title">¡MANTENTE AL TANTO!</h3>
-                        <h5>Recibe noticias y actualizaciones. ¡Suscríbete ya a nuestro newsletter!</h5>
+                        <h5>
+                          Recibe noticias y actualizaciones. ¡Suscríbete ya a nuestro
+                          newsletter!
+                        </h5>
                         <div class="input-group mb-3 w-md-25 div-content mt-4">
-                              <input type="email" class="form-control " placeholder="mail@example.com" aria-label="Recipient's username" aria-describedby="basic-addon2">
-                              <div class="input-group-append">
-                                <span class="input-group-text bg-warning text-white font-weight-bold" id="basic-addon2">SUSCRÍBETE!</span>
-                              </div>
+                          <input type="email" class="form-control " placeholder="mail@example.com" aria-label="Recipient's username"
+                            aria-describedby="basic-addon2" />
+                          <div class="input-group-append">
+                            <span class="input-group-text bg-third text-white font-weight-bold" id="basic-addon2">SUSCRÍBETE!</span>
+                          </div>
+                        </div>
+                        <div id="col-footer" class="row mt-5 w-75 div-content">
+                          <div class="col-md-3 mb-4">
+                            <div class="pie-1">
+                              <img class="img-fluid mb-3 " src="assets/img/logo-cdi.png" />
+                              <h6 class="h7  pt-3"><i class="far fa-envelope mr-2"></i>info@cdiproject.com</h6>
+                              <h6 class="h7 "><i class="far fa-building mr-2"></i>RUC 20601708141</h6>
+                              <h6 class="h7 pb-3"><i class="fas fa-university mr-2"></i>Registro SBS 1234</h6>
                             </div>
-                        <div class="row mt-5">
-                          <div class="col-md-3">
-                            <h6
-                              class="pt-3 pb-3"
-                              data-toggle="modal"
-                              data-target="#modalPrivacidad"
-                            >
-                              Política de privacidad
+                          </div>
+                          <div class="col-md-3 mb-4">
+                            <h5>EMPRESA</h5>
+                            <div class="bt-underline"></div>
+                            <h6 class="pt-3 pb-3" data-toggle="modal" data-target="#modalTerminos">
+                              Nuestra historia
                             </h6>
                           </div>
-                          <div class="col-md-3">
-                            <h6
-                              class="pt-3 pb-3"
-                              data-toggle="modal"
-                              data-target="#modalTerminos"
-                            >
-                              Términos y condiciones
-                            </h6>
+                          <div class="col-md-3 mb-4">
+                            <h5>SOPORTE</h5>
+                            <div class="bt-underline"></div>
+                            <h6 class="pt-3">Preguntas Frecuentes</h6>
+                            <h6 class="pb-3">Contáctanos</h6>
                           </div>
-                          <div class="col-md-3">
-                            <h6
-                              class="pt-3 pb-3"
-                              data-toggle="modal"
-                              data-target="#modalReclamaciones"
-                            >
-                              Libro de reclamaciones
-                            </h6>
-                          </div>
-                          <div class="col-md-3">
-                            <h6
-                              class="pt-3 pb-3"
-                              data-toggle="modal"
-                              data-target="#modalMapa"
-                            >
-                              Mapa del Sitio
-                            </h6>
+                          <div class="col-md-3 mb-4">
+                            <h5>OTROS</h5>
+                            <div class="bt-underline"></div>
+                            <h6 class="pt-3" data-toggle="modal" data-target="#modalReclamaciones">Libro de reclamaciones</h6>
+                            <h6 class="pb-3" data-toggle="modal" data-target="#modalMapa">Mapa del Sitio</h6>
                           </div>
                         </div>
                         <p class="footer-al pt-5">
-                          CDI Project es un producto de Fintech, empresa registrada en la<span
-                            ><br />
-                            UIF de la Superintendencia de Banca, Seguros y AFP.</span
-                          >
+                          CDI Project es un producto de Fintech, empresa registrada en la<span><br />
+                            UIF de la Superintendencia de Banca, Seguros y AFP.</span>
                         </p>
                       </div>
                     </div>
