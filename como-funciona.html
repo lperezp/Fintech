@@ -2,7 +2,10 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0,user-scalable=no"
+    />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link
       href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
@@ -15,328 +18,503 @@
       crossorigin="anonymous"
     />
     <link href="./assets/css/main.css" rel="stylesheet" />
-    <title>HolaAndy</title>
+    <title>HolaCDI Project</title>
   </head>
-
   <body class="p-0">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <!-- <a class="navbar-brand" href="#"><img src="https://holaandy.com/assets/img/logo-andy.png?id=2019_01"/></a> -->
-      <a class="navbar-brand" href="#">HolaAndy</a>
-      <button
-        class="navbar-toggler collapsed"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarNavAltMarkup"
-        aria-controls="navbarNavAltMarkup"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div
-        class="navbar-collapse justify-content-end collapse"
-        id="navbarNavAltMarkup"
-      >
-        <div class="navbar-nav">
-          <a class="nav-item nav-link active" href="./index.html"
-            >INICIO<span class="sr-only">(current)</span></a
-          >
-          <a class="nav-item nav-link" href="./como-funciona.html"
-            >CÓMO FUNCIONA</a
-          >
-          <a class="nav-item nav-link" href="nosotros.html">NOSOTROS</a>
-          <a class="nav-item nav-link" href="blog.html">BLOG</a>
-          <a class="nav-item nav-link" href="ayuda.html">AYUDA</a>
-          <button class="btn h-25 p-1 bg-primary mt-1">Iniciar Sesión</button>
-        </div>
-      </div>
-    </nav>
-    <div class="container-fluid">
-      <div class="row">
-            <div class="col-md-12">
-            <section class="cnt-form-datos como-funciona border bg-dark m-3 mt-5">
-                <div class="bg__light bg-calculos p-4">
-                    <div class="container">
-                        <div class="calculos-top">
-                            <form class="modificar-credito modificar-datos" method="post" action="">
-                                <input type="hidden" name="_token" value="SKyVxAF2XwmgsAQ2hmauHpOls0YwjBK6KkQRrv5M">
-                                <div class="row">
-                                    <div class="col-md-4 text-center">
-                                        <h5 class="h6 text-light solicitado t-solici">¿Cuánto quieres?</h5>
-                                        <div class="calculator">
-                                            <a class="menos" title="Disminuir monto" href="#" id="minus_cuanto_quieres">-</a>
-                                            <input type="number" name="cuanto_quieres" id="cuanto_quieres" class="w-50 text-right" value="">
-                                            <a class="mas" title="Aumentar monto" href="#" id="plus_cuanto_quieres">+</a>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4 text-center">
-                                        <h5 class="h6 text-light solicitado t-intere">¿Cuántas cuotas?</h5>
-                                        <div class="calculator">
-                                            <a class="menos" title="Disminuir una cuota" href="#" id="minus_como_pagas">-</a>
-                                            <input  class="w-50 text-right" name="nro_cuotas_sol" id="como_pagas" type="number" value="">
-                                            <a class="mas" title="Aumentar una cuota" href="#" id="plus_como_pagas">+</a>
-                                        </div>
-                                    </div>  
-                                    <div class="col-md-2 text-center text-light">
-                                        <div class="inner">
-                                            <h3 id="texto_cuotas" class="h6 cuotas t-cuota">Cuota mensual</h3>
-                                            <h4>S/. 597.00 </h4>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-2 text-center">
-                                        <button type="submit" class="btn mt-4 mb-4 bg-primary text-light font-weight-bold"><span>¡Lo Quiero!</span></button>
-                                    </div>  
+      <div class="d-flex toggled" id="wrapper">
+
+          <!-- Sidebar -->
+          <div class="bg-light border-right" id="sidebar-wrapper">
+              <div class="sidebar-heading">
+                <img src="assets/img/logo-cdi.png" width="200px">
+              </div>
+            <div class="list-group list-group-flush">
+              <a href="index.html" class="list-group-item list-group-item-action bg-light">INICIO</a>
+              <a href="como-funciona.html" class="list-group-item list-group-item-action bg-light">COMO FUNCIONA</a>
+              <a href="nosotros.html" class="list-group-item list-group-item-action bg-light">NOSOTROS</a>
+              <a href="blog.html" class="list-group-item list-group-item-action bg-light">BLOG</a>
+              <a href="ayuda.html" class="list-group-item list-group-item-action bg-light">AYUDA</a>
+            </div>
+          </div>
+          <!-- /#sidebar-wrapper -->
+      
+          <!-- Page Content -->
+          <div id="page-content-wrapper">
+      
+              <nav class="navbar navbar-expand-lg navbar-dark bg-transparent d-none d-sm-none d-md-block">
+                  <img
+                    class="ml-5 position-absolute"
+                    src="assets/img/logo-cdi.png"
+                    width="170"
+                    height="40"
+                    alt=""
+                  />
+                  <button
+                    class="navbar-toggler collapsed"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#navbarNavAltMarkup"
+                    aria-controls="navbarNavAltMarkup"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                  >
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div
+                    class="navbar-collapse justify-content-end collapse"
+                    id="navbarNavAltMarkup"
+                  >
+                    <div class="navbar-nav">
+                      <a class="nav-item nav-link pr-5 active" href="./index.html"
+                        >INICIO<span class="sr-only">(current)</span></a
+                      >
+                      <a class="nav-item nav-link pr-5" href="./como-funciona.html"
+                        >CÓMO FUNCIONA</a
+                      >
+                      <a class="nav-item nav-link pr-5" href="nosotros.html">NOSOTROS</a>
+                      <a class="nav-item nav-link pr-5" href="blog.html">BLOG</a>
+                      <a class="nav-item nav-link pr-5" href="ayuda.html">AYUDA</a>
+                      <!-- <button class="btn h-25 p-1 bg-primary mt-1 text-white">Iniciar Sesión</button> -->
+                    </div>
+                  </div>
+                </nav>
+      
+                <div class="container-fluid">
+                    <div class="row">
+                          <div class="col-md-12">
+                          <section class="cnt-form-datos como-funciona border bg-dark m-3 mt-5">
+                              <div class="bg__light bg-calculos p-4">
+                                  <div class="container">
+                                      <div class="calculos-top">
+                                          <form class="modificar-credito modificar-datos" method="post" action="">
+                                              <input type="hidden" name="_token" value="SKyVxAF2XwmgsAQ2hmauHpOls0YwjBK6KkQRrv5M">
+                                              <div class="row">
+                                                  <div class="col-md-4 text-center">
+                                                      <h5 class="h6 text-light solicitado t-solici">¿Cuánto quieres?</h5>
+                                                      <div class="calculator">
+                                                          <a class="menos" title="Disminuir monto" href="#" id="minus_cuanto_quieres">-</a>
+                                                          <input type="number" name="cuanto_quieres" id="cuanto_quieres" class="w-50 text-right" value="">
+                                                          <a class="mas" title="Aumentar monto" href="#" id="plus_cuanto_quieres">+</a>
+                                                      </div>
+                                                  </div>
+                                                  <div class="col-md-4 text-center">
+                                                      <h5 class="h6 text-light solicitado t-intere">¿Cuántas cuotas?</h5>
+                                                      <div class="calculator">
+                                                          <a class="menos" title="Disminuir una cuota" href="#" id="minus_como_pagas">-</a>
+                                                          <input  class="w-50 text-right" name="nro_cuotas_sol" id="como_pagas" type="number" value="">
+                                                          <a class="mas" title="Aumentar una cuota" href="#" id="plus_como_pagas">+</a>
+                                                      </div>
+                                                  </div>  
+                                                  <div class="col-md-2 text-center text-light">
+                                                      <div class="inner">
+                                                          <h3 id="texto_cuotas" class="h6 cuotas t-cuota">Cuota mensual</h3>
+                                                          <h4>S/. 597.00 </h4>
+                                                      </div>
+                                                  </div>
+                                                  <div class="col-md-2 text-center">
+                                                      <button type="submit" class="btn mt-4 mb-4 bg-primary text-light font-weight-bold"><span>¡Lo Quiero!</span></button>
+                                                  </div>  
+                                              </div>
+                                          </form>
+              </div>
+              <div class="datos-calculos text-light">
+              <p class="ast">Préstamo S/ <span id="resPrestamos">500</span> <strong>+</strong> Intereses y Comisiones S/
+              <span id="resInteres">97</span> <strong>=</strong> Total a pagar S/ <span id="resTotal">597</span><br>
+              <strong>* Tasa Efectiva Mensual: </strong> <strong class="tem_int_com">16.39</strong><strong>%</strong>.
+              TCEA de <span class="valor tcea_sin_igv">518</span>%+IGV y primer vencimiento
+              el 01/08/2019 (lo podrás modificar más adelante).
+              Desembolso en 1 hora durante <strong>horario de oficina.</strong></p>
+              </div>
+              </div>
+              </div>
+              </section>
+                  </div>
+                    </div>
+                    <div id="pasos" class="row text-center pt-5 mb-5">
+                      <div class="col-md-12">
+                        <h3>Tu plata en 3 simples pasos</h3>
+                        <h6>
+                          Solo 3 pasos para solicitar tu préstamo en línea. Más rápido,
+                          imposible.
+                        </h6>
+                        <div class="row">
+                          <div class="col-md-4 p-4">
+                            <div class="border-icon">
+                              <i
+                                class="fas fa-money-bill-alt font-50 pt-4 text-secondary"
+                              ></i>
+                            </div>
+                            <div class="row">
+                            <div class="col-4 text-right pr-1">
+                                  <h2 class="mt-3">1</h2>
+                            </div>
+                            <div class="col-8 text-left pl-0">
+                                  <h6 class="mt-3 mr-5 pr-5">Selecciona el importe y las cuotas que deseas</h6>
+                            </div>
+                          </div>
+                          </div>
+                          <div class="col-md-4 p-4">
+                            <div class="border-icon">
+                              <i
+                                class="fas fa-pencil-alt f-50  font-50 p-4 text-secondary"
+                              ></i>
+                            </div>
+                            <div class="row">
+                                  <div class="col-4 text-right pr-1">
+                                        <h2 class="mt-3">2</h2>
+                                  </div>
+                                  <div class="col-8 text-left pl-0">
+                                        <h6 class="mt-3 mr-5 ">Completa el formulario con tus datos</h6>
+                                  </div>
                                 </div>
-                            </form>
-</div>
-<div class="datos-calculos text-light">
-<p class="ast">Préstamo S/ <span id="resPrestamos">500</span> <strong>+</strong> Intereses y Comisiones S/
-<span id="resInteres">97</span> <strong>=</strong> Total a pagar S/ <span id="resTotal">597</span><br>
-<strong>* Tasa Efectiva Mensual: </strong> <strong class="tem_int_com">16.39</strong><strong>%</strong>.
-TCEA de <span class="valor tcea_sin_igv">518</span>%+IGV y primer vencimiento
-el 01/08/2019 (lo podrás modificar más adelante).
-Desembolso en 1 hora durante <strong>horario de oficina.</strong></p>
-</div>
-</div>
-</div>
-</section>
-    </div>
-      </div>
-      <div id="pasos" class="row text-center pt-5 mb-5">
-        <div class="col-md-12">
-          <h3>Tu plata en 3 simples pasos</h3>
-          <h6>
-            Solo 3 pasos para solicitar tu préstamo en línea. Más rápido,
-            imposible.
-          </h6>
-          <div class="row">
-            <div class="col-md-4 p-4">
-              <div class="border-icon">
-                <i
-                  class="fas fa-money-bill-alt font-50 pt-4 text-secondary"
-                ></i>
-              </div>
-              <div class="row">
-              <div class="col-4 text-right pr-1">
-                    <h2 class="mt-3">1</h2>
-              </div>
-              <div class="col-8 text-left pl-0">
-                    <h6 class="mt-3 mr-5 pr-5">Selecciona el importe y las cuotas que deseas</h6>
-              </div>
-            </div>
-            </div>
-            <div class="col-md-4 p-4">
-              <div class="border-icon">
-                <i
-                  class="fas fa-pencil-alt f-50  font-50 p-4 text-secondary"
-                ></i>
-              </div>
-              <div class="row">
-                    <div class="col-4 text-right pr-1">
-                          <h2 class="mt-3">2</h2>
-                    </div>
-                    <div class="col-8 text-left pl-0">
-                          <h6 class="mt-3 mr-5 ">Completa el formulario con tus datos</h6>
-                    </div>
-                  </div>
-            </div>
-            <div class="col-md-4 p-4">
-              <div class="border-icon">
-                <i class="far fa-clock font-50 p-4 text-secondary"></i>
-              </div>
-              <div class="row">
-                    <div class="col-4 text-right pr-1">
-                          <h2 class="mt-3">3</h2>
-                    </div>
-                    <div class="col-8 text-left pl-0">
-                          <h6 class="mt-3 mr-5">Aprobamos tu préstamo y recibes tu plata en 1 hora</h6>
-                    </div>
-                  </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div id="video" class="row ">
-        <div class="col-md-12 text-center">
-          <div class="video-contenedor">
-            <iframe
-              src="https://www.youtube.com/embed/NJA3o2WGgyo"
-              frameborder="0"
-              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen=""
-            ></iframe>
-          </div>
-        </div>
-      </div>
-      <div id="informacion" class="row p-5 mt-3 mb-3 d-none d-sm-none d-md-block">
-          <div class="col-md-12">
-            <div class="row">
-                <div class="col-4 border-right">
-                    <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                        <a class="nav-link  text-dark active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab"
-                            aria-controls="v-pills-home" aria-selected="true">Solicitar un Préstamo</a>
-                        <a class="nav-link text-dark" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab"
-                            aria-controls="v-pills-profile" aria-selected="false">Nuestras Ventajas</a>
-                        <a class="nav-link text-dark" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab"
-                            aria-controls="v-pills-messages" aria-selected="false">Formas de Pago</a>
-                    </div>
-                </div>
-                <div class="col-8">
-                    <div class="tab-content" id="v-pills-tabContent">
-                        <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
-                            <h4>Solicitar un préstamo</h4>
-                            <p>Puedes repagar tu préstamo en Interbank, BBVA Continental y BCP.</p>
-                            <p>En Interbank puedes pagar tu préstamo, sin comisión alguna, a través de su Banca por Internet (app y desktop), Agentes o Agencias (incluidas las que se ubican dentro de Plaza Vea y Vivanda):</p>
-                            <ul>
-                                <li>Banca por Internet: Pagos de Servicios o Recibos --> ANDY. Luego ingresa el número de tu DNI.</li>
-                                <li>Agentes: Solo menciona que quieres pagar el Servicio o Recibo ANDY (código 2782601) y brinda tu número de DNI.</li>
-                                <li>Agencias: Solo menciona que quieres pagar el Servicio o Recibo ANDY (código 0782601) y brinda tu número de DNI.</li>
-                            </ul>
-                            <p>En BBVA Continental puedes pagar tu préstamo, sin comisión alguna, a través de su Banca por Internet (app y desktop), Agentes (incluido Kasnet) o Agencias:</p>
-                            <ul>
-                                    <li>Banca por Internet: Pago de Servicios --> Instituciones y Empresas --> ANDY-Latin. Luego ingresa el número de tu DNI.</li>
-                                    <li>Agentes: Solo menciona que quieres pagar el Servicio ANDY-Latin (código 8940) y brinda tu número de DNI.</li>
-                                    <li>Agencias: Solo menciona que quieres pagar el Servicio o Recibo ANDY-Latin (código 8940) y brinda tu número de DNI.</li>
-                            </ul>
-                        </div>
-                        <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
-                            <h4>Nuestras ventajas</h4>
-                            <ul>
-                                    <li>Flexibilidad en opciones de montos y cuotas</li>
-                                    <li>Evaluación crediticia y respuesta en segundos. Todo en línea</li>
-                                    <li>Sin garantías, ni papeleos, ni visitas a agencias</li>
-                                    <li>Desembolso directo en tu cuenta bancaria</li>
-                                    <li>Menores tasas, mayores importes y más facilidades para clientes recurrentes</li>
-                                    <li>Diversidad de opciones para el pago de tu préstamo</li>
-                                    <li>Perfil personal con detalles de tus préstamos y aplicaciones</li>
-                            </ul>
-                        </div>
-                        <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
-                            <h4>Formas de Pago</h4>
-                            <p>Puedes repagar tu préstamo en Interbank, BBVA Continental y BCP.</p>
-                            <p>En Interbank puedes pagar tu préstamo, sin comisión alguna, a través de su Banca por Internet (app y desktop), Agentes o Agencias (incluidas las que se ubican dentro de Plaza Vea y Vivanda):</p>
-                            <ul>
-                                    <li>Banca por Internet: Pagos de Servicios o Recibos --> ANDY. Luego ingresa el número de tu DNI.</li>
-                                    <li>Agentes: Solo menciona que quieres pagar el Servicio o Recibo ANDY (código 2782601) y brinda tu número de DNI.</li>
-                                    <li>Agencias: Solo menciona que quieres pagar el Servicio o Recibo ANDY (código 0782601) y brinda tu número de DNI.</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-          </div>
-      </div>
-      <div class="row mt-5 d-block  d-sm-block d-md-none" id="info2">
-          <div class="col-md-12">
-                <nav>
-                        <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                          <a class="text-dark nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true"><small>Solicítalo</small></a>
-                          <a class="text-dark nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false"><small>Ventajas</small></a>
-                          <a class="text-dark nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false"><small>Formas de Pago</small></a>
-                        </div>
-                      </nav>
-                      <div class="tab-content" id="nav-tabContent">
-                        <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
-                                <h4>Solicitar un préstamo</h4>
-                                <p>Puedes repagar tu préstamo en Interbank, BBVA Continental y BCP.</p>
-                                <p>En Interbank puedes pagar tu préstamo, sin comisión alguna, a través de su Banca por Internet (app y desktop), Agentes o Agencias (incluidas las que se ubican dentro de Plaza Vea y Vivanda):</p>
-                                <ul>
-                                    <li>Banca por Internet: Pagos de Servicios o Recibos --> ANDY. Luego ingresa el número de tu DNI.</li>
-                                    <li>Agentes: Solo menciona que quieres pagar el Servicio o Recibo ANDY (código 2782601) y brinda tu número de DNI.</li>
-                                    <li>Agencias: Solo menciona que quieres pagar el Servicio o Recibo ANDY (código 0782601) y brinda tu número de DNI.</li>
-                                </ul>
-                                <p>En BBVA Continental puedes pagar tu préstamo, sin comisión alguna, a través de su Banca por Internet (app y desktop), Agentes (incluido Kasnet) o Agencias:</p>
-                                <ul>
-                                        <li>Banca por Internet: Pago de Servicios --> Instituciones y Empresas --> ANDY-Latin. Luego ingresa el número de tu DNI.</li>
-                                        <li>Agentes: Solo menciona que quieres pagar el Servicio ANDY-Latin (código 8940) y brinda tu número de DNI.</li>
-                                        <li>Agencias: Solo menciona que quieres pagar el Servicio o Recibo ANDY-Latin (código 8940) y brinda tu número de DNI.</li>
-                                </ul>
-                        </div>
-                        <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
-                                <h4>Nuestras ventajas</h4>
-                                <ul>
-                                        <li>Flexibilidad en opciones de montos y cuotas</li>
-                                        <li>Evaluación crediticia y respuesta en segundos. Todo en línea</li>
-                                        <li>Sin garantías, ni papeleos, ni visitas a agencias</li>
-                                        <li>Desembolso directo en tu cuenta bancaria</li>
-                                        <li>Menores tasas, mayores importes y más facilidades para clientes recurrentes</li>
-                                        <li>Diversidad de opciones para el pago de tu préstamo</li>
-                                        <li>Perfil personal con detalles de tus préstamos y aplicaciones</li>
-                                </ul>
-                        </div>
-                        <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
-                                <h4>Formas de Pago</h4>
-                                <p>Puedes repagar tu préstamo en Interbank, BBVA Continental y BCP.</p>
-                                <p>En Interbank puedes pagar tu préstamo, sin comisión alguna, a través de su Banca por Internet (app y desktop), Agentes o Agencias (incluidas las que se ubican dentro de Plaza Vea y Vivanda):</p>
-                                <ul>
-                                        <li>Banca por Internet: Pagos de Servicios o Recibos --> ANDY. Luego ingresa el número de tu DNI.</li>
-                                        <li>Agentes: Solo menciona que quieres pagar el Servicio o Recibo ANDY (código 2782601) y brinda tu número de DNI.</li>
-                                        <li>Agencias: Solo menciona que quieres pagar el Servicio o Recibo ANDY (código 0782601) y brinda tu número de DNI.</li>
-                                </ul>
+                          </div>
+                          <div class="col-md-4 p-4">
+                            <div class="border-icon">
+                              <i class="far fa-clock font-50 p-4 text-secondary"></i>
+                            </div>
+                            <div class="row">
+                                  <div class="col-4 text-right pr-1">
+                                        <h2 class="mt-3">3</h2>
+                                  </div>
+                                  <div class="col-8 text-left pl-0">
+                                        <h6 class="mt-3 mr-5">Aprobamos tu préstamo y recibes tu plata en 1 hora</h6>
+                                  </div>
+                                </div>
+                          </div>
                         </div>
                       </div>
+                    </div>
+                    <div id="video" class="row ">
+                      <div class="col-md-12 text-center">
+                        <div class="video-contenedor">
+                          <iframe
+                            src="https://www.youtube.com/embed/NJA3o2WGgyo"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen=""
+                          ></iframe>
+                        </div>
+                      </div>
+                    </div>
+                    <div id="informacion" class="row p-5 mt-3 mb-3 d-none d-sm-none d-md-block">
+                        <div class="col-md-12">
+                          <div class="row">
+                              <div class="col-4 border-right">
+                                  <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                                      <a class="nav-link  text-dark active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab"
+                                          aria-controls="v-pills-home" aria-selected="true">Solicitar un Préstamo</a>
+                                      <a class="nav-link text-dark" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab"
+                                          aria-controls="v-pills-profile" aria-selected="false">Nuestras Ventajas</a>
+                                      <a class="nav-link text-dark" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab"
+                                          aria-controls="v-pills-messages" aria-selected="false">Formas de Pago</a>
+                                  </div>
+                              </div>
+                              <div class="col-8">
+                                  <div class="tab-content" id="v-pills-tabContent">
+                                      <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                                          <h4>Solicitar un préstamo</h4>
+                                          <p>Puedes repagar tu préstamo en Interbank, BBVA Continental y BCP.</p>
+                                          <p>En Interbank puedes pagar tu préstamo, sin comisión alguna, a través de su Banca por Internet (app y desktop), Agentes o Agencias (incluidas las que se ubican dentro de Plaza Vea y Vivanda):</p>
+                                          <ul>
+                                              <li>Banca por Internet: Pagos de Servicios o Recibos --> CDI Project. Luego ingresa el número de tu DNI.</li>
+                                              <li>Agentes: Solo menciona que quieres pagar el Servicio o Recibo CDI Project (código 2782601) y brinda tu número de DNI.</li>
+                                              <li>Agencias: Solo menciona que quieres pagar el Servicio o Recibo CDI Project (código 0782601) y brinda tu número de DNI.</li>
+                                          </ul>
+                                          <p>En BBVA Continental puedes pagar tu préstamo, sin comisión alguna, a través de su Banca por Internet (app y desktop), Agentes (incluido Kasnet) o Agencias:</p>
+                                          <ul>
+                                                  <li>Banca por Internet: Pago de Servicios --> Instituciones y Empresas --> CDI Project-Latin. Luego ingresa el número de tu DNI.</li>
+                                                  <li>Agentes: Solo menciona que quieres pagar el Servicio CDI Project-Latin (código 8940) y brinda tu número de DNI.</li>
+                                                  <li>Agencias: Solo menciona que quieres pagar el Servicio o Recibo CDI Project-Latin (código 8940) y brinda tu número de DNI.</li>
+                                          </ul>
+                                      </div>
+                                      <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                                          <h4>Nuestras ventajas</h4>
+                                          <ul>
+                                                  <li>Flexibilidad en opciones de montos y cuotas</li>
+                                                  <li>Evaluación crediticia y respuesta en segundos. Todo en línea</li>
+                                                  <li>Sin garantías, ni papeleos, ni visitas a agencias</li>
+                                                  <li>Desembolso directo en tu cuenta bancaria</li>
+                                                  <li>Menores tasas, mayores importes y más facilidades para clientes recurrentes</li>
+                                                  <li>Diversidad de opciones para el pago de tu préstamo</li>
+                                                  <li>Perfil personal con detalles de tus préstamos y aplicaciones</li>
+                                          </ul>
+                                      </div>
+                                      <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+                                          <h4>Formas de Pago</h4>
+                                          <p>Puedes repagar tu préstamo en Interbank, BBVA Continental y BCP.</p>
+                                          <p>En Interbank puedes pagar tu préstamo, sin comisión alguna, a través de su Banca por Internet (app y desktop), Agentes o Agencias (incluidas las que se ubican dentro de Plaza Vea y Vivanda):</p>
+                                          <ul>
+                                                  <li>Banca por Internet: Pagos de Servicios o Recibos --> CDI Project. Luego ingresa el número de tu DNI.</li>
+                                                  <li>Agentes: Solo menciona que quieres pagar el Servicio o Recibo CDI Project (código 2782601) y brinda tu número de DNI.</li>
+                                                  <li>Agencias: Solo menciona que quieres pagar el Servicio o Recibo CDI Project (código 0782601) y brinda tu número de DNI.</li>
+                                          </ul>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="row mt-5 d-block  d-sm-block d-md-none" id="info2">
+                        <div class="col-md-12">
+                              <nav>
+                                      <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                        <a class="text-dark nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true"><small>Solicítalo</small></a>
+                                        <a class="text-dark nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false"><small>Ventajas</small></a>
+                                        <a class="text-dark nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false"><small>Formas de Pago</small></a>
+                                      </div>
+                                    </nav>
+                                    <div class="tab-content" id="nav-tabContent">
+                                      <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                                              <h4>Solicitar un préstamo</h4>
+                                              <p>Puedes repagar tu préstamo en Interbank, BBVA Continental y BCP.</p>
+                                              <p>En Interbank puedes pagar tu préstamo, sin comisión alguna, a través de su Banca por Internet (app y desktop), Agentes o Agencias (incluidas las que se ubican dentro de Plaza Vea y Vivanda):</p>
+                                              <ul>
+                                                  <li>Banca por Internet: Pagos de Servicios o Recibos --> CDI Project. Luego ingresa el número de tu DNI.</li>
+                                                  <li>Agentes: Solo menciona que quieres pagar el Servicio o Recibo CDI Project (código 2782601) y brinda tu número de DNI.</li>
+                                                  <li>Agencias: Solo menciona que quieres pagar el Servicio o Recibo CDI Project (código 0782601) y brinda tu número de DNI.</li>
+                                              </ul>
+                                              <p>En BBVA Continental puedes pagar tu préstamo, sin comisión alguna, a través de su Banca por Internet (app y desktop), Agentes (incluido Kasnet) o Agencias:</p>
+                                              <ul>
+                                                      <li>Banca por Internet: Pago de Servicios --> Instituciones y Empresas --> CDI Project-Latin. Luego ingresa el número de tu DNI.</li>
+                                                      <li>Agentes: Solo menciona que quieres pagar el Servicio CDI Project-Latin (código 8940) y brinda tu número de DNI.</li>
+                                                      <li>Agencias: Solo menciona que quieres pagar el Servicio o Recibo CDI Project-Latin (código 8940) y brinda tu número de DNI.</li>
+                                              </ul>
+                                      </div>
+                                      <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                                              <h4>Nuestras ventajas</h4>
+                                              <ul>
+                                                      <li>Flexibilidad en opciones de montos y cuotas</li>
+                                                      <li>Evaluación crediticia y respuesta en segundos. Todo en línea</li>
+                                                      <li>Sin garantías, ni papeleos, ni visitas a agencias</li>
+                                                      <li>Desembolso directo en tu cuenta bancaria</li>
+                                                      <li>Menores tasas, mayores importes y más facilidades para clientes recurrentes</li>
+                                                      <li>Diversidad de opciones para el pago de tu préstamo</li>
+                                                      <li>Perfil personal con detalles de tus préstamos y aplicaciones</li>
+                                              </ul>
+                                      </div>
+                                      <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+                                              <h4>Formas de Pago</h4>
+                                              <p>Puedes repagar tu préstamo en Interbank, BBVA Continental y BCP.</p>
+                                              <p>En Interbank puedes pagar tu préstamo, sin comisión alguna, a través de su Banca por Internet (app y desktop), Agentes o Agencias (incluidas las que se ubican dentro de Plaza Vea y Vivanda):</p>
+                                              <ul>
+                                                      <li>Banca por Internet: Pagos de Servicios o Recibos --> CDI Project. Luego ingresa el número de tu DNI.</li>
+                                                      <li>Agentes: Solo menciona que quieres pagar el Servicio o Recibo CDI Project (código 2782601) y brinda tu número de DNI.</li>
+                                                      <li>Agencias: Solo menciona que quieres pagar el Servicio o Recibo CDI Project (código 0782601) y brinda tu número de DNI.</li>
+                                              </ul>
+                                      </div>
+                                    </div>
+                        </div>
+                    </div>
+                    <div
+                      id="aspectos-legales"
+                      class="row bg-secondary text-white text-center p-4"
+                    >
+                      <div class="col-12 pt-4">
+                        <h3 class="title">¡MANTENTE AL TANTO!</h3>
+                        <h5>Recibe noticias y actualizaciones. ¡Suscríbete ya a nuestro newsletter!</h5>
+                        <div class="input-group mb-3 w-md-25 div-content mt-4">
+                              <input type="email" class="form-control " placeholder="mail@example.com" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                              <div class="input-group-append">
+                                <span class="input-group-text bg-warning text-white font-weight-bold" id="basic-addon2">SUSCRÍBETE!</span>
+                              </div>
+                            </div>
+                        <div class="row mt-5">
+                          <div class="col-md-3">
+                            <h6
+                              class="pt-3 pb-3"
+                              data-toggle="modal"
+                              data-target="#modalPrivacidad"
+                            >
+                              Política de privacidad
+                            </h6>
+                          </div>
+                          <div class="col-md-3">
+                            <h6
+                              class="pt-3 pb-3"
+                              data-toggle="modal"
+                              data-target="#modalTerminos"
+                            >
+                              Términos y condiciones
+                            </h6>
+                          </div>
+                          <div class="col-md-3">
+                            <h6
+                              class="pt-3 pb-3"
+                              data-toggle="modal"
+                              data-target="#modalReclamaciones"
+                            >
+                              Libro de reclamaciones
+                            </h6>
+                          </div>
+                          <div class="col-md-3">
+                            <h6
+                              class="pt-3 pb-3"
+                              data-toggle="modal"
+                              data-target="#modalMapa"
+                            >
+                              Mapa del Sitio
+                            </h6>
+                          </div>
+                        </div>
+                        <p class="footer-al pt-5">
+                          CDI Project es un producto de Fintech, empresa registrada en la<span
+                            ><br />
+                            UIF de la Superintendencia de Banca, Seguros y AFP.</span
+                          >
+                        </p>
+                      </div>
+                    </div>
+                  </div>
           </div>
-      </div>
-      <div
-        id="aspectos-legales"
-        class="row bg-secondary text-white text-center p-4"
-      >
-        <div class="col-12 pt-4">
-          <h3 class="title">¡MANTENTE AL TANTO!</h3>
-          <h5>Recibe noticias y actualizaciones. ¡Suscríbete ya a nuestro newsletter!</h5>
-          <div class="input-group mb-3 w-md-25 div-content mt-4">
-                <input type="email" class="form-control " placeholder="mail@example.com" aria-label="Recipient's username" aria-describedby="basic-addon2">
-                <div class="input-group-append">
-                  <span class="input-group-text bg-warning text-white font-weight-bold" id="basic-addon2">SUSCRÍBETE!</span>
-                </div>
-              </div>
-          <div class="row mt-5">
-            <div class="col-md-3">
-              <h6
-                class="pt-3 pb-3"
-                data-toggle="modal"
-                data-target="#modalPrivacidad"
-              >
-                Política de privacidad
-              </h6>
-            </div>
-            <div class="col-md-3">
-              <h6
-                class="pt-3 pb-3"
-                data-toggle="modal"
-                data-target="#modalTerminos"
-              >
-                Términos y condiciones
-              </h6>
-            </div>
-            <div class="col-md-3">
-              <h6
-                class="pt-3 pb-3"
-                data-toggle="modal"
-                data-target="#modalReclamaciones"
-              >
-                Libro de reclamaciones
-              </h6>
-            </div>
-            <div class="col-md-3">
-              <h6
-                class="pt-3 pb-3"
-                data-toggle="modal"
-                data-target="#modalMapa"
-              >
-                Mapa del Sitio
-              </h6>
-            </div>
-          </div>
-          <p class="footer-al pt-5">
-            Andy es un producto de Fintech, empresa registrada en la<span
-              ><br />
-              UIF de la Superintendencia de Banca, Seguros y AFP.</span
+          <!-- /#page-content-wrapper -->
+      
+        </div>
+        <!-- /#wrapper -->
+    
+    <!-- modales PRIVACIDAD -->
+    <div
+      class="modal fade"
+      id="modalPrivacidad"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalCenterTitle"
+      aria-hidden="true"
+      data-backdrop="static"
+    >
+      <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">
+              Política de Privacidad
+            </h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
             >
-          </p>
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body font-12">
+            <p class="text-justify">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
+              blandit et magna aliquam interdum. Fusce dignissim ante tortor, ac
+              rutrum sem malesuada sed. Pellentesque habitant morbi tristique
+              senectus et netus et malesuada fames ac turpis egestas. Sed
+              tincidunt purus mauris, in dictum lorem commodo et. Ut ornare
+              sagittis enim, quis blandit justo pellentesque ac. Nulla facilisi.
+              Vestibulum et posuere nisl. Morbi odio ligula, faucibus eget odio
+              eu, rutrum finibus ipsum. Fusce pharetra lacus vel augue
+              condimentum aliquam. Donec vel nulla metus. Donec a augue
+              efficitur, ornare sem non, imperdiet elit. Vivamus ac molestie
+              quam, sed pretium ex. Pellentesque laoreet lacinia quam malesuada
+              hendrerit. Duis a tellus sodales, rutrum massa id, vestibulum
+              sapien. Quisque sodales imperdiet est ac ultricies. Quisque nisl
+              nunc, vulputate sed enim a, rutrum malesuada dui. Etiam et tempus
+              nunc. Nam urna metus, bibendum non gravida non, congue sit amet
+              ante. Aliquam erat volutpat. Integer hendrerit non diam quis
+              imperdiet. Nullam pulvinar ligula eu elit sagittis, a malesuada
+              sem placerat. Sed ut placerat ex. Orci varius natoque penatibus et
+              magnis dis parturient montes, nascetur ridiculus mus. In tempor
+              ligula vel lobortis ornare. Pellentesque viverra elementum neque,
+              vel facilisis elit efficitur vitae. Quisque commodo placerat
+              commodo. Sed auctor sit amet dolor at euismod. Pellentesque
+              habitant morbi tristique senectus et netus et malesuada fames ac
+              turpis egestas. Sed et ultricies metus. Vestibulum id magna nec
+              risus cursus consectetur in nec tortor. Aliquam congue felis urna.
+            </p>
+          </div>
         </div>
       </div>
     </div>
+    <!-- modales -->
+    <!-- modales TERMINOS -->
+    <div
+      class="modal fade"
+      id="modalTerminos"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalCenterTitle"
+      aria-hidden="true"
+      data-backdrop="static"
+    >
+      <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">
+              Política de Privacidad
+            </h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p class="text-justify">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+              malesuada lectus quis pretium convallis. Class aptent taciti
+              sociosqu ad litora torquent per conubia nostra, per inceptos
+              himenaeos. Etiam at interdum arcu, vitae placerat quam. Morbi ac
+              accumsan tellus, nec posuere risus. Quisque ac hendrerit turpis.
+              Vestibulum consequat nibh a tortor porttitor fermentum. Etiam eu
+              arcu et arcu pretium tincidunt. Nullam sem diam, lacinia interdum
+              enim non, pharetra auctor mauris. Sed sed posuere sapien, at
+              lacinia turpis. Fusce lacinia, purus ac tristique accumsan, massa
+              nulla aliquam metus, et consequat felis urna a dolor. Donec
+              laoreet dolor sit amet arcu gravida accumsan. In accumsan sed enim
+              eu elementum. Donec sit amet mattis nibh. Nunc rhoncus eget est
+              vitae sodales. Phasellus gravida justo id ipsum faucibus, in
+              malesuada diam consectetur. Vivamus volutpat interdum ipsum. Donec
+              ac elit nulla. Sed pulvinar congue lacinia. Aliquam erat volutpat.
+              Cras semper ipsum ut dui suscipit ultrices. Integer sed nibh sit
+              amet diam posuere sollicitudin. Ut nibh enim, volutpat at justo
+              id, luctus dignissim mi. Vestibulum mi augue, commodo et velit et,
+              cursus ultrices nisi. Maecenas eu rutrum diam. Ut sagittis ante
+              vel felis auctor, vitae mollis diam porttitor. Aenean in
+              condimentum nunc. Cras luctus at leo vitae iaculis. Aenean est
+              risus, maximus ut vehicula a, rutrum a urna. Nunc iaculis sapien
+              et arcu vulputate ultricies. Nam et nisl condimentum, porttitor
+              ligula ut, rutrum nulla. Pellentesque eu lacus a elit lacinia
+              faucibus. Nunc auctor magna at felis gravida feugiat. In auctor
+              neque sit amet enim rhoncus hendrerit. Nunc lobortis eros
+              efficitur purus dignissim, quis tristique velit pharetra.
+              Pellentesque aliquam vel dui et eleifend. Sed finibus elementum
+              ligula, in ultrices tortor semper a. Nam id magna eget tellus
+              ultricies vulputate a vel nunc. Class aptent taciti sociosqu ad
+              litora torquent per conubia nostra, per inceptos himenaeos.
+              Praesent sagittis odio nulla. Morbi scelerisque sapien ut mauris
+              sollicitudin, vitae efficitur augue maximus. Nunc maximus tellus
+              et dolor laoreet, sit amet varius dolor vehicula. Quisque semper
+              leo et diam rutrum tempus. Maecenas quis leo vel augue posuere
+              pellentesque. Nam luctus sem nec quam commodo commodo. Nam a
+              sollicitudin diam, vitae suscipit justo. Donec sagittis erat vitae
+              pulvinar aliquet. Integer auctor nisl pellentesque, viverra sem
+              at, molestie augue. Integer iaculis leo a laoreet molestie. In hac
+              habitasse platea dictumst. Nam libero turpis, molestie porttitor
+              libero vitae, sollicitudin varius lacus. Aliquam pulvinar blandit
+              dictum. Nulla convallis sodales lectus. Nullam vel tincidunt est,
+              sit amet malesuada enim.
+            </p>
+          </div>
+          <!-- <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div> -->
+        </div>
+      </div>
+    </div>
+    <!-- modales -->
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -352,5 +530,16 @@ Desembolso en 1 hora durante <strong>horario de oficina.</strong></p>
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
+    <script>
+        $("#menu-toggle").click(function(e) {
+          e.preventDefault();
+          $("#wrapper").toggleClass("toggled");
+        });
+
+        var mediaquery = window.matchMedia("(max-width: 767.98px)");
+        if (mediaquery.matches) {
+          $("#wrapper").removeClass("toggled");
+        }
+      </script>
   </body>
 </html>
