@@ -34,10 +34,6 @@
 .h7 {
   font-size: 14px; }
 
-p,
-ul li {
-  font-size: 14px !important; }
-
 .font-20 {
   font-size: 20px; }
 
@@ -201,9 +197,6 @@ input[type="number"] {
   .contenedor-header-right {
     padding: 1em 3em 0em 3em; }
 
-  p {
-    font-size: 11px !important; }
-
   .footer-al {
     text-align: center; }
 
@@ -217,9 +210,10 @@ input[type="number"] {
   .w-md-25 {
     width: 100%; }
 
-  p,
+  /*  p,
   ul li {
-    font-size: 11px !important; } }
+    font-size: 11px !important;
+  } */ }
 /*!
  * Start Bootstrap - Simple Sidebar (https://startbootstrap.com/template-overviews/simple-sidebar)
  * Copyright 2013-2019 Start Bootstrap

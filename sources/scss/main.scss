@@ -60,11 +60,6 @@ $light: #fff;
   font-size: 14px;
 }
 
-p,
-ul li {
-  font-size: 14px !important;
-}
-
 .font-20 {
   font-size: 20px;
 }
@@ -276,10 +271,6 @@ input[type="number"] {
     padding: 1em 3em 0em 3em;
   }
 
-  p {
-    font-size: 11px !important;
-  }
-
   .footer-al {
     text-align: center;
   }
@@ -297,10 +288,10 @@ input[type="number"] {
     width: 100%;
   }
 
-  p,
+  /*  p,
   ul li {
     font-size: 11px !important;
-  }
+  } */
 }
 
 /*!

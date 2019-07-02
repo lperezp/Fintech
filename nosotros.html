@@ -2,7 +2,10 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0,user-scalable=no"
+    />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link
       href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
@@ -15,148 +18,376 @@
       crossorigin="anonymous"
     />
     <link href="./assets/css/main.css" rel="stylesheet" />
-    <title>HolaAndy</title>
+    <title>HolaCDI Project</title>
   </head>
 
   <body class="p-0">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <!-- <a class="navbar-brand" href="#"><img src="https://holaandy.com/assets/img/logo-andy.png?id=2019_01"/></a> -->
-      <a class="navbar-brand" href="#">HolaAndy</a>
-      <button
-        class="navbar-toggler collapsed"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarNavAltMarkup"
-        aria-controls="navbarNavAltMarkup"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div
-        class="navbar-collapse justify-content-end collapse"
-        id="navbarNavAltMarkup"
-      >
-        <div class="navbar-nav">
-          <a class="nav-item nav-link active" href="./index.html"
-            >INICIO<span class="sr-only">(current)</span></a
+    <div class="d-flex toggled" id="wrapper">
+      <!-- Sidebar -->
+      <div class="bg-light border-right" id="sidebar-wrapper">
+        <div class="sidebar-heading">
+          <img src="assets/img/logo-cdi.png" width="200px" />
+        </div>
+        <div class="list-group list-group-flush">
+          <a
+            href="index.html"
+            class="list-group-item list-group-item-action bg-light"
+            >INICIO</a
           >
-          <a class="nav-item nav-link" href="./como-funciona.html"
-            >CÓMO FUNCIONA</a
+          <a
+            href="como-funciona.html"
+            class="list-group-item list-group-item-action bg-light"
+            >COMO FUNCIONA</a
           >
-          <a class="nav-item nav-link" href="nosotros.html">NOSOTROS</a>
-          <a class="nav-item nav-link" href="blog.html">BLOG</a>
-          <a class="nav-item nav-link" href="ayuda.html">AYUDA</a>
-          <button class="btn h-25 p-1 bg-primary mt-1">Iniciar Sesión</button>
+          <a
+            href="nosotros.html"
+            class="list-group-item list-group-item-action bg-light"
+            >NOSOTROS</a
+          >
+          <a
+            href="blog.html"
+            class="list-group-item list-group-item-action bg-light"
+            >BLOG</a
+          >
+          <a
+            href="ayuda.html"
+            class="list-group-item list-group-item-action bg-light"
+            >AYUDA</a
+          >
         </div>
       </div>
-    </nav>
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-md-12 p-0">
-          <div class="portal-nosotros">
-            <h1 id="header-nosotros" class="text-center text-white ">
-              Nosotros
-            </h1>
+      <!-- /#sidebar-wrapper -->
+
+      <!-- Page Content -->
+      <div id="page-content-wrapper">
+        <nav
+          class="navbar navbar-expand-lg navbar-dark bg-transparent d-none d-sm-none d-md-block"
+        >
+          <img
+            class="ml-5 position-absolute"
+            src="assets/img/logo-cdi.png"
+            width="170"
+            height="40"
+            alt=""
+          />
+          <button
+            class="navbar-toggler collapsed"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="navbar-collapse justify-content-end collapse"
+            id="navbarNavAltMarkup"
+          >
+            <div class="navbar-nav">
+              <a class="nav-item nav-link pr-5 active" href="./index.html"
+                >INICIO<span class="sr-only">(current)</span></a
+              >
+              <a class="nav-item nav-link pr-5" href="./como-funciona.html"
+                >CÓMO FUNCIONA</a
+              >
+              <a class="nav-item nav-link pr-5" href="nosotros.html"
+                >NOSOTROS</a
+              >
+              <a class="nav-item nav-link pr-5" href="blog.html">BLOG</a>
+              <a class="nav-item nav-link pr-5" href="ayuda.html">AYUDA</a>
+              <!-- <button class="btn h-25 p-1 bg-primary mt-1 text-white">Iniciar Sesión</button> -->
+            </div>
+          </div>
+        </nav>
+
+        <div class="container-fluid">
+          <div class="row" id="header">
+            <div class="col-md-12 p-0 header-div">
+              <div class="portal-nosotros w-100">
+                <div class="row m-0 text-center text-white">
+                  <div class=" d-block  d-sm-block d-md-none">
+                    <button id="menu-toggle" class="btn bg-primary m-1 ml-3">
+                      <i class="fas fa-bars text-white"></i>
+                    </button>
+                  </div>
+                  <div class="col-md-12 contenedor-header-center">
+                    <h1>Nosotros</h1>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="nosotros" class="row text-center mb-5">
+            <div class="col-md-12">
+              <p class=" text-justify parrafo-nosotros">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+                non mollis est. Vivamus vestibulum velit nisi, sit amet
+                fringilla diam sagittis in. Maecenas ac diam quis odio pretium
+                tristique ullamcorper in dui. Suspendisse quis lorem vehicula,
+                scelerisque nisi id, condimentum turpis. Mauris facilisis lacus
+                nulla, nec bibendum lectus fringilla eu. Donec est lorem, congue
+                vel nulla ut, gravida commodo nisi. Maecenas auctor orci dolor,
+                et semper velit posuere sit amet. Sed quis aliquam mi, nec
+                vehicula velit.
+              </p>
+              <p class="text-justify parrafo-nosotros">
+                Curabitur facilisis lacus a porta cursus. Praesent sem tortor,
+                luctus a sapien fringilla, porta egestas elit. Phasellus blandit
+                cursus aliquet. Integer eu ipsum sit amet orci consectetur
+                mollis in sed tellus. Pellentesque et posuere ligula. Vivamus
+                ante diam, blandit a mi vitae, rutrum fermentum purus. Duis at
+                enim faucibus, cursus lacus non, placerat erat. Suspendisse ac
+                pulvinar est. Orci varius natoque penatibus et magnis dis
+                parturient montes, nascetur ridiculus mus. Aenean maximus neque
+                ex, id sollicitudin nisi venenatis a. Nullam nec arcu mattis
+                nibh mollis pulvinar et at nulla.
+              </p>
+              <p class="text-justify parrafo-nosotros">
+                In faucibus tellus pretium interdum vestibulum. Morbi ut augue
+                consequat, hendrerit dolor vel, fermentum tellus. In eget magna
+                ut ligula fermentum ullamcorper. Nam lobortis sollicitudin quam,
+                eget accumsan leo varius vel. Nulla convallis nisl dolor, vel
+                congue nunc suscipit ut. Fusce ornare arcu convallis enim
+                consequat, et commodo erat dapibus. Proin ut sagittis nibh.
+              </p>
+            </div>
+          </div>
+          <div
+            id="aspectos-legales"
+            class="row bg-secondary text-white text-center p-4"
+          >
+            <div class="col-12 pt-4">
+              <h3 class="title">¡MANTENTE AL TANTO!</h3>
+              <h5>
+                Recibe noticias y actualizaciones. ¡Suscríbete ya a nuestro
+                newsletter!
+              </h5>
+              <div class="input-group mb-3 w-md-25 div-content mt-4">
+                <input
+                  type="email"
+                  class="form-control "
+                  placeholder="mail@example.com"
+                  aria-label="Recipient's username"
+                  aria-describedby="basic-addon2"
+                />
+                <div class="input-group-append">
+                  <span
+                    class="input-group-text bg-third text-white font-weight-bold"
+                    id="basic-addon2"
+                    >SUSCRÍBETE!</span
+                  >
+                </div>
+              </div>
+              <div id="col-footer" class="row mt-5 w-75 div-content">
+                <div class="col-md-3 mb-4">
+                  <div class="pie-1">
+                    <img
+                      class="img-fluid mb-3 "
+                      src="assets/img/logo-cdi.png"
+                    />
+                    <h6 class="h7  pt-3">
+                      <i class="far fa-envelope mr-2"></i>info@cdiproject.com
+                    </h6>
+                    <h6 class="h7 ">
+                      <i class="far fa-building mr-2"></i>RUC 20601708141
+                    </h6>
+                    <h6 class="h7 pb-3">
+                      <i class="fas fa-university mr-2"></i>Registro SBS 1234
+                    </h6>
+                  </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                  <h5>EMPRESA</h5>
+                  <div class="bt-underline"></div>
+                  <h6
+                    class="pt-3 pb-3"
+                    data-toggle="modal"
+                    data-target="#modalTerminos"
+                  >
+                    Nuestra historia
+                  </h6>
+                </div>
+                <div class="col-md-3 mb-4">
+                  <h5>SOPORTE</h5>
+                  <div class="bt-underline"></div>
+                  <h6 class="pt-3">Preguntas Frecuentes</h6>
+                  <h6 class="pb-3">Contáctanos</h6>
+                </div>
+                <div class="col-md-3 mb-4">
+                  <h5>OTROS</h5>
+                  <div class="bt-underline"></div>
+                  <h6
+                    class="pt-3"
+                    data-toggle="modal"
+                    data-target="#modalReclamaciones"
+                  >
+                    Libro de reclamaciones
+                  </h6>
+                  <h6 class="pb-3" data-toggle="modal" data-target="#modalMapa">
+                    Mapa del Sitio
+                  </h6>
+                </div>
+              </div>
+              <small class="footer-al pt-5">
+                CDI Project es un producto de Fintech, empresa registrada en
+                la
+                  UIF de la Superintendencia de Banca, Seguros y AFP.</span
+                >
+              </small>
+            </div>
           </div>
         </div>
       </div>
-      <div id="nosotros" class="row text-center pt-5 mb-5">
-        <div class="col-md-12">
-          <h6 class="text-justify parrafo-nosotros">
-            Andy es un producto de Latin Fintech, una empresa peruana registrada
-            en la UIF (Unidad de Inteligencia Financiera (UIF) de la SBS
-            (Superintendencia de Banca, Seguros y AFP) que brinda préstamos de
-            una manera más rápida, eficiente y amigable que la banca
-            tradicional. Nos apoyamos en el uso de la tecnología para brindar a
-            nuestros clientes una experiencia más placentera, sin papeleos ni
-            trámites engorrosos. Estamos convencidos de que realizar operaciones
-            financieras debería ser tan fácil como revisar tu Facebook, mirar un
-            video en Youtube, o simplemente navegar por Internet.
-          </h6>
-          <h4 class="text-left ml-5">Qué nos caracteriza</h4>
-          <h6 class="text-justify parrafo-nosotros">
-            Innovación: Otorgamos préstamos personales de una manera rápida,
-            segura y eficaz. Esto es posible gracias a nuestro potente algoritmo
-            crediticio y al uso de tecnología de punta. Nuestra equipo está
-            comprometido en brindar una experiencia de usuario que sobrepase las
-            expectativas de nuestros clientes.
-          </h6>
-        </div>
-      </div>
-      <div
-        id="aspectos-legales"
-        class="row bg-secondary text-white text-center p-4"
-      >
-        <div class="col-12 pt-4">
-          <h3 class="title">¡MANTENTE AL TANTO!</h3>
-          <h5>
-            Recibe noticias y actualizaciones. ¡Suscríbete ya a nuestro
-            newsletter!
-          </h5>
-          <div class="input-group mb-3 w-md-25 div-content mt-4">
-            <input
-              type="email"
-              class="form-control "
-              placeholder="mail@example.com"
-              aria-label="Recipient's username"
-              aria-describedby="basic-addon2"
-            />
-            <div class="input-group-append">
-              <span
-                class="input-group-text bg-warning text-white font-weight-bold"
-                id="basic-addon2"
-                >SUSCRÍBETE!</span
-              >
-            </div>
-          </div>
-          <div class="row mt-5">
-            <div class="col-md-3">
-              <h6
-                class="pt-3 pb-3"
-                data-toggle="modal"
-                data-target="#modalPrivacidad"
-              >
-                Política de privacidad
-              </h6>
-            </div>
-            <div class="col-md-3">
-              <h6
-                class="pt-3 pb-3"
-                data-toggle="modal"
-                data-target="#modalTerminos"
-              >
-                Términos y condiciones
-              </h6>
-            </div>
-            <div class="col-md-3">
-              <h6
-                class="pt-3 pb-3"
-                data-toggle="modal"
-                data-target="#modalReclamaciones"
-              >
-                Libro de reclamaciones
-              </h6>
-            </div>
-            <div class="col-md-3">
-              <h6
-                class="pt-3 pb-3"
-                data-toggle="modal"
-                data-target="#modalMapa"
-              >
-                Mapa del Sitio
-              </h6>
-            </div>
-          </div>
-          <p class="footer-al pt-5">
-            Andy es un producto de Fintech, empresa registrada en la<span
-              ><br />
-              UIF de la Superintendencia de Banca, Seguros y AFP.</span
+      <!-- /#page-content-wrapper -->
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- modales PRIVACIDAD -->
+    <div
+      class="modal fade"
+      id="modalPrivacidad"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalCenterTitle"
+      aria-hidden="true"
+      data-backdrop="static"
+    >
+      <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">
+              Política de Privacidad
+            </h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
             >
-          </p>
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body ">
+            <p class="text-justify">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
+              blandit et magna aliquam interdum. Fusce dignissim ante tortor, ac
+              rutrum sem malesuada sed. Pellentesque habitant morbi tristique
+              senectus et netus et malesuada fames ac turpis egestas. Sed
+              tincidunt purus mauris, in dictum lorem commodo et. Ut ornare
+              sagittis enim, quis blandit justo pellentesque ac. Nulla facilisi.
+              Vestibulum et posuere nisl. Morbi odio ligula, faucibus eget odio
+              eu, rutrum finibus ipsum. Fusce pharetra lacus vel augue
+              condimentum aliquam. Donec vel nulla metus. Donec a augue
+              efficitur, ornare sem non, imperdiet elit. Vivamus ac molestie
+              quam, sed pretium ex. Pellentesque laoreet lacinia quam malesuada
+              hendrerit. Duis a tellus sodales, rutrum massa id, vestibulum
+              sapien. Quisque sodales imperdiet est ac ultricies. Quisque nisl
+              nunc, vulputate sed enim a, rutrum malesuada dui. Etiam et tempus
+              nunc. Nam urna metus, bibendum non gravida non, congue sit amet
+              ante. Aliquam erat volutpat. Integer hendrerit non diam quis
+              imperdiet. Nullam pulvinar ligula eu elit sagittis, a malesuada
+              sem placerat. Sed ut placerat ex. Orci varius natoque penatibus et
+              magnis dis parturient montes, nascetur ridiculus mus. In tempor
+              ligula vel lobortis ornare. Pellentesque viverra elementum neque,
+              vel facilisis elit efficitur vitae. Quisque commodo placerat
+              commodo. Sed auctor sit amet dolor at euismod. Pellentesque
+              habitant morbi tristique senectus et netus et malesuada fames ac
+              turpis egestas. Sed et ultricies metus. Vestibulum id magna nec
+              risus cursus consectetur in nec tortor. Aliquam congue felis urna.
+            </p>
+          </div>
         </div>
       </div>
     </div>
+    <!-- modales -->
+    <!-- modales TERMINOS -->
+    <div
+      class="modal fade"
+      id="modalTerminos"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalCenterTitle"
+      aria-hidden="true"
+      data-backdrop="static"
+    >
+      <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">
+              Política de Privacidad
+            </h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p class="text-justify">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+              malesuada lectus quis pretium convallis. Class aptent taciti
+              sociosqu ad litora torquent per conubia nostra, per inceptos
+              himenaeos. Etiam at interdum arcu, vitae placerat quam. Morbi ac
+              accumsan tellus, nec posuere risus. Quisque ac hendrerit turpis.
+              Vestibulum consequat nibh a tortor porttitor fermentum. Etiam eu
+              arcu et arcu pretium tincidunt. Nullam sem diam, lacinia interdum
+              enim non, pharetra auctor mauris. Sed sed posuere sapien, at
+              lacinia turpis. Fusce lacinia, purus ac tristique accumsan, massa
+              nulla aliquam metus, et consequat felis urna a dolor. Donec
+              laoreet dolor sit amet arcu gravida accumsan. In accumsan sed enim
+              eu elementum. Donec sit amet mattis nibh. Nunc rhoncus eget est
+              vitae sodales. Phasellus gravida justo id ipsum faucibus, in
+              malesuada diam consectetur. Vivamus volutpat interdum ipsum. Donec
+              ac elit nulla. Sed pulvinar congue lacinia. Aliquam erat volutpat.
+              Cras semper ipsum ut dui suscipit ultrices. Integer sed nibh sit
+              amet diam posuere sollicitudin. Ut nibh enim, volutpat at justo
+              id, luctus dignissim mi. Vestibulum mi augue, commodo et velit et,
+              cursus ultrices nisi. Maecenas eu rutrum diam. Ut sagittis ante
+              vel felis auctor, vitae mollis diam porttitor. Aenean in
+              condimentum nunc. Cras luctus at leo vitae iaculis. Aenean est
+              risus, maximus ut vehicula a, rutrum a urna. Nunc iaculis sapien
+              et arcu vulputate ultricies. Nam et nisl condimentum, porttitor
+              ligula ut, rutrum nulla. Pellentesque eu lacus a elit lacinia
+              faucibus. Nunc auctor magna at felis gravida feugiat. In auctor
+              neque sit amet enim rhoncus hendrerit. Nunc lobortis eros
+              efficitur purus dignissim, quis tristique velit pharetra.
+              Pellentesque aliquam vel dui et eleifend. Sed finibus elementum
+              ligula, in ultrices tortor semper a. Nam id magna eget tellus
+              ultricies vulputate a vel nunc. Class aptent taciti sociosqu ad
+              litora torquent per conubia nostra, per inceptos himenaeos.
+              Praesent sagittis odio nulla. Morbi scelerisque sapien ut mauris
+              sollicitudin, vitae efficitur augue maximus. Nunc maximus tellus
+              et dolor laoreet, sit amet varius dolor vehicula. Quisque semper
+              leo et diam rutrum tempus. Maecenas quis leo vel augue posuere
+              pellentesque. Nam luctus sem nec quam commodo commodo. Nam a
+              sollicitudin diam, vitae suscipit justo. Donec sagittis erat vitae
+              pulvinar aliquet. Integer auctor nisl pellentesque, viverra sem
+              at, molestie augue. Integer iaculis leo a laoreet molestie. In hac
+              habitasse platea dictumst. Nam libero turpis, molestie porttitor
+              libero vitae, sollicitudin varius lacus. Aliquam pulvinar blandit
+              dictum. Nulla convallis sodales lectus. Nullam vel tincidunt est,
+              sit amet malesuada enim.
+            </p>
+          </div>
+          <!-- <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div> -->
+        </div>
+      </div>
+    </div>
+    <!-- modales -->
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -172,5 +403,16 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
+    <script>
+      $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+      });
+
+      var mediaquery = window.matchMedia("(max-width: 767.98px)");
+      if (mediaquery.matches) {
+        $("#wrapper").removeClass("toggled");
+      }
+    </script>
   </body>
 </html>
