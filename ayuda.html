@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0,user-scalable=no"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link href="./assets/css/main.css" rel="stylesheet" />
+    <title>HolaCDI Project</title>
+  </head>
+
+  <body class="p-0">
+    <div class="d-flex toggled" id="wrapper">
+      <!-- Sidebar -->
+      <div class="bg-light  " id="sidebar-wrapper">
+        <div class="sidebar-heading">
+          <img src="assets/img/logo-cdi.png" width="200px" />
+        </div>
+        <div class="list-group list-group-flush">
+          <a
+            href="index.html"
+            class="list-group-item list-group-item-action bg-light"
+            >INICIO</a
+          >
+          <a
+            href="como-funciona.html"
+            class="list-group-item list-group-item-action bg-light"
+            >COMO FUNCIONA</a
+          >
+          <a
+            href="nosotros.html"
+            class="list-group-item list-group-item-action bg-light"
+            >NOSOTROS</a
+          >
+          <a
+            href="blog.html"
+            class="list-group-item list-group-item-action bg-light"
+            >BLOG</a
+          >
+          <a
+            href="ayuda.html"
+            class="list-group-item list-group-item-action bg-light"
+            >AYUDA</a
+          >
+        </div>
+      </div>
+      <!-- /#sidebar-wrapper -->
+
+      <!-- Page Content -->
+      <div id="page-content-wrapper">
+        <nav
+          class="navbar navbar-expand-lg navbar-dark bg-transparent d-none d-sm-none d-md-block"
+        >
+          <img
+            class="ml-5 position-absolute"
+            src="assets/img/logo-cdi.png"
+            width="170"
+            height="40"
+            alt=""
+          />
+          <button
+            class="navbar-toggler collapsed"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="navbar-collapse justify-content-end collapse"
+            id="navbarNavAltMarkup"
+          >
+            <div class="navbar-nav">
+              <a class="nav-item nav-link pr-5 active" href="./index.html"
+                >INICIO<span class="sr-only">(current)</span></a
+              >
+              <a class="nav-item nav-link pr-5" href="./como-funciona.html"
+                >CÓMO FUNCIONA</a
+              >
+              <a class="nav-item nav-link pr-5" href="nosotros.html"
+                >NOSOTROS</a
+              >
+              <a class="nav-item nav-link pr-5" href="blog.html">BLOG</a>
+              <a class="nav-item nav-link pr-5" href="ayuda.html">AYUDA</a>
+              <!-- <button class="btn h-25 p-1 bg-primary mt-1 text-white">Iniciar Sesión</button> -->
+            </div>
+          </div>
+        </nav>
+
+        <div class="container-fluid">
+          <div class="row" id="header">
+            <div class="col-md-12 p-0 header-div">
+              <div class="portal-nosotros w-100">
+                <div class="row m-0 text-center text-white">
+                  <div class=" d-block  d-sm-block d-md-none">
+                    <button id="menu-toggle" class="btn bg-primary m-1 ml-3">
+                      <i class="fas fa-bars text-white"></i>
+                    </button>
+                  </div>
+                  <div class="col-md-12 contenedor-header-center">
+                    <h1>Ayuda</h1>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="lista" class="row mb-5 w-75 div-content">
+            <div class="col-md-12">
+              <div id="accordion">
+                <div class="card">
+                  <div class="card-header" id="headingOne">
+                    <h5 class="mb-0">
+                      <button
+                        class="btn"
+                        data-toggle="collapse"
+                        data-target="#collapseOne"
+                        aria-expanded="true"
+                        aria-controls="collapseOne"
+                      >
+                        ¿Cuáles son los requisitos para solicitar un préstamo?
+                      </button>
+                    </h5>
+                  </div>
+
+                  <div
+                    id="collapseOne"
+                    class="collapse show"
+                    aria-labelledby="headingOne"
+                    data-parent="#accordion"
+                  >
+                    <div class="card-body">
+                      Anim pariatur cliche reprehenderit, enim eiusmod high life
+                      accusamus terry richardson ad squid. 3 wolf moon officia
+                      aute, non cupidatat skateboard dolor brunch. Food truck
+                      quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon
+                      tempor, sunt aliqua put a bird on it squid single-origin
+                      coffee nulla assumenda shoreditch et. Nihil anim keffiyeh
+                      helvetica, craft beer labore wes anderson cred nesciunt
+                      sapiente ea proident. Ad vegan excepteur butcher vice
+                      lomo. Leggings occaecat craft beer farm-to-table, raw
+                      denim aesthetic synth nesciunt you probably haven't heard
+                      of them accusamus labore sustainable VHS.
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="headingTwo">
+                    <h5 class="mb-0">
+                      <button
+                        class="btn collapsed"
+                        data-toggle="collapse"
+                        data-target="#collapseTwo"
+                        aria-expanded="false"
+                        aria-controls="collapseTwo"
+                      >
+                        ¿Cómo solicito un préstamo?
+                      </button>
+                    </h5>
+                  </div>
+                  <div
+                    id="collapseTwo"
+                    class="collapse"
+                    aria-labelledby="headingTwo"
+                    data-parent="#accordion"
+                  >
+                    <div class="card-body">
+                      Anim pariatur cliche reprehenderit, enim eiusmod high life
+                      accusamus terry richardson ad squid. 3 wolf moon officia
+                      aute, non cupidatat skateboard dolor brunch. Food truck
+                      quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon
+                      tempor, sunt aliqua put a bird on it squid single-origin
+                      coffee nulla assumenda shoreditch et. Nihil anim keffiyeh
+                      helvetica, craft beer labore wes anderson cred nesciunt
+                      sapiente ea proident. Ad vegan excepteur butcher vice
+                      lomo. Leggings occaecat craft beer farm-to-table, raw
+                      denim aesthetic synth nesciunt you probably haven't heard
+                      of them accusamus labore sustainable VHS.
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="headingThree">
+                    <h5 class="mb-0">
+                      <button
+                        class="btn collapsed"
+                        data-toggle="collapse"
+                        data-target="#collapseThree"
+                        aria-expanded="false"
+                        aria-controls="collapseThree"
+                      >
+                        ¿Cuál es el horario de atención de las solicitudes de
+                        préstamo?
+                      </button>
+                    </h5>
+                  </div>
+                  <div
+                    id="collapseThree"
+                    class="collapse"
+                    aria-labelledby="headingThree"
+                    data-parent="#accordion"
+                  >
+                    <div class="card-body">
+                      Anim pariatur cliche reprehenderit, enim eiusmod high life
+                      accusamus terry richardson ad squid. 3 wolf moon officia
+                      aute, non cupidatat skateboard dolor brunch. Food truck
+                      quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon
+                      tempor, sunt aliqua put a bird on it squid single-origin
+                      coffee nulla assumenda shoreditch et. Nihil anim keffiyeh
+                      helvetica, craft beer labore wes anderson cred nesciunt
+                      sapiente ea proident. Ad vegan excepteur butcher vice
+                      lomo. Leggings occaecat craft beer farm-to-table, raw
+                      denim aesthetic synth nesciunt you probably haven't heard
+                      of them accusamus labore sustainable VHS.
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="headingThree">
+                    <h5 class="mb-0">
+                      <button
+                        class="btn collapsed"
+                        data-toggle="collapse"
+                        data-target="#item4"
+                        aria-expanded="false"
+                        aria-controls="collapseThree"
+                      >
+                        Item 4
+                      </button>
+                    </h5>
+                  </div>
+                  <div
+                    id="item4"
+                    class="collapse"
+                    aria-labelledby="headingThree"
+                    data-parent="#accordion"
+                  >
+                    <div class="card-body">
+                      Anim pariatur cliche reprehenderit, enim eiusmod high life
+                      accusamus terry richardson ad squid. 3 wolf moon officia
+                      aute, non cupidatat skateboard dolor brunch. Food truck
+                      quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon
+                      tempor, sunt aliqua put a bird on it squid single-origin
+                      coffee nulla assumenda shoreditch et. Nihil anim keffiyeh
+                      helvetica, craft beer labore wes anderson cred nesciunt
+                      sapiente ea proident. Ad vegan excepteur butcher vice
+                      lomo. Leggings occaecat craft beer farm-to-table, raw
+                      denim aesthetic synth nesciunt you probably haven't heard
+                      of them accusamus labore sustainable VHS.
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="headingThree">
+                    <h5 class="mb-0">
+                      <button
+                        class="btn collapsed"
+                        data-toggle="collapse"
+                        data-target="#item5"
+                        aria-expanded="false"
+                        aria-controls="collapseThree"
+                      >
+                        Item5
+                      </button>
+                    </h5>
+                  </div>
+                  <div
+                    id="item5"
+                    class="collapse"
+                    aria-labelledby="headingThree"
+                    data-parent="#accordion"
+                  >
+                    <div class="card-body">
+                      Anim pariatur cliche reprehenderit, enim eiusmod high life
+                      accusamus terry richardson ad squid. 3 wolf moon officia
+                      aute, non cupidatat skateboard dolor brunch. Food truck
+                      quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon
+                      tempor, sunt aliqua put a bird on it squid single-origin
+                      coffee nulla assumenda shoreditch et. Nihil anim keffiyeh
+                      helvetica, craft beer labore wes anderson cred nesciunt
+                      sapiente ea proident. Ad vegan excepteur butcher vice
+                      lomo. Leggings occaecat craft beer farm-to-table, raw
+                      denim aesthetic synth nesciunt you probably haven't heard
+                      of them accusamus labore sustainable VHS.
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="headingThree">
+                    <h5 class="mb-0">
+                      <button
+                        class="btn collapsed"
+                        data-toggle="collapse"
+                        data-target="#item6"
+                        aria-expanded="false"
+                        aria-controls="collapseThree"
+                      >
+                        Item6
+                      </button>
+                    </h5>
+                  </div>
+                  <div
+                    id="item6"
+                    class="collapse"
+                    aria-labelledby="headingThree"
+                    data-parent="#accordion"
+                  >
+                    <div class="card-body">
+                      Anim pariatur cliche reprehenderit, enim eiusmod high life
+                      accusamus terry richardson ad squid. 3 wolf moon officia
+                      aute, non cupidatat skateboard dolor brunch. Food truck
+                      quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon
+                      tempor, sunt aliqua put a bird on it squid single-origin
+                      coffee nulla assumenda shoreditch et. Nihil anim keffiyeh
+                      helvetica, craft beer labore wes anderson cred nesciunt
+                      sapiente ea proident. Ad vegan excepteur butcher vice
+                      lomo. Leggings occaecat craft beer farm-to-table, raw
+                      denim aesthetic synth nesciunt you probably haven't heard
+                      of them accusamus labore sustainable VHS.
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="headingThree">
+                    <h5 class="mb-0">
+                      <button
+                        class="btn collapsed"
+                        data-toggle="collapse"
+                        data-target="#item7"
+                        aria-expanded="false"
+                        aria-controls="collapseThree"
+                      >
+                        Item7
+                      </button>
+                    </h5>
+                  </div>
+                  <div
+                    id="item7"
+                    class="collapse"
+                    aria-labelledby="headingThree"
+                    data-parent="#accordion"
+                  >
+                    <div class="card-body">
+                      Anim pariatur cliche reprehenderit, enim eiusmod high life
+                      accusamus terry richardson ad squid. 3 wolf moon officia
+                      aute, non cupidatat skateboard dolor brunch. Food truck
+                      quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon
+                      tempor, sunt aliqua put a bird on it squid single-origin
+                      coffee nulla assumenda shoreditch et. Nihil anim keffiyeh
+                      helvetica, craft beer labore wes anderson cred nesciunt
+                      sapiente ea proident. Ad vegan excepteur butcher vice
+                      lomo. Leggings occaecat craft beer farm-to-table, raw
+                      denim aesthetic synth nesciunt you probably haven't heard
+                      of them accusamus labore sustainable VHS.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            id="aspectos-legales"
+            class="row bg-secondary text-white text-center p-4"
+          >
+            <div class="col-12 pt-4">
+              <h3 class="title">¡MANTENTE AL TANTO!</h3>
+              <h5>
+                Recibe noticias y actualizaciones. ¡Suscríbete ya a nuestro
+                newsletter!
+              </h5>
+              <div class="input-group mb-3 w-md-25 div-content mt-4">
+                <input
+                  type="email"
+                  class="form-control "
+                  placeholder="mail@example.com"
+                  aria-label="Recipient's username"
+                  aria-describedby="basic-addon2"
+                />
+                <div class="input-group-append">
+                  <span
+                    class="input-group-text bg-third text-white font-weight-bold"
+                    id="basic-addon2"
+                    >SUSCRÍBETE!</span
+                  >
+                </div>
+              </div>
+              <div id="col-footer" class="row mt-5 w-75 div-content">
+                <div class="col-md-3 mb-4">
+                  <div class="pie-1">
+                    <img
+                      class="img-fluid mb-3 "
+                      src="assets/img/logo-cdi.png"
+                    />
+                    <h6 class="h7  pt-3">
+                      <i class="far fa-envelope mr-2"></i>info@cdiproject.com
+                    </h6>
+                    <h6 class="h7 ">
+                      <i class="far fa-building mr-2"></i>RUC 20601708141
+                    </h6>
+                    <h6 class="h7 pb-3">
+                      <i class="fas fa-university mr-2"></i>Registro SBS 1234
+                    </h6>
+                  </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                  <h5>EMPRESA</h5>
+                  <div class="bt-underline"></div>
+                  <h6
+                    class="pt-3 pb-3"
+                    data-toggle="modal"
+                    data-target="#modalTerminos"
+                  >
+                    Nuestra historia
+                  </h6>
+                </div>
+                <div class="col-md-3 mb-4">
+                  <h5>SOPORTE</h5>
+                  <div class="bt-underline"></div>
+                  <h6 class="pt-3">Preguntas Frecuentes</h6>
+                  <h6 class="pb-3">Contáctanos</h6>
+                </div>
+                <div class="col-md-3 mb-4">
+                  <h5>OTROS</h5>
+                  <div class="bt-underline"></div>
+                  <h6
+                    class="pt-3"
+                    data-toggle="modal"
+                    data-target="#modalReclamaciones"
+                  >
+                    Libro de reclamaciones
+                  </h6>
+                  <h6 class="pb-3" data-toggle="modal" data-target="#modalMapa">
+                    Mapa del Sitio
+                  </h6>
+                </div>
+              </div>
+              <small class="footer-al pt-5">
+                CDI Project es un producto de Fintech, empresa registrada en la
+                UIF de la Superintendencia de Banca, Seguros y AFP.
+              </small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /#page-content-wrapper -->
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- modales PRIVACIDAD -->
+    <div
+      class="modal fade"
+      id="modalPrivacidad"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalCenterTitle"
+      aria-hidden="true"
+      data-backdrop="static"
+    >
+      <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">
+              Política de Privacidad
+            </h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body ">
+            <p class="text-justify">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
+              blandit et magna aliquam interdum. Fusce dignissim ante tortor, ac
+              rutrum sem malesuada sed. Pellentesque habitant morbi tristique
+              senectus et netus et malesuada fames ac turpis egestas. Sed
+              tincidunt purus mauris, in dictum lorem commodo et. Ut ornare
+              sagittis enim, quis blandit justo pellentesque ac. Nulla facilisi.
+              Vestibulum et posuere nisl. Morbi odio ligula, faucibus eget odio
+              eu, rutrum finibus ipsum. Fusce pharetra lacus vel augue
+              condimentum aliquam. Donec vel nulla metus. Donec a augue
+              efficitur, ornare sem non, imperdiet elit. Vivamus ac molestie
+              quam, sed pretium ex. Pellentesque laoreet lacinia quam malesuada
+              hendrerit. Duis a tellus sodales, rutrum massa id, vestibulum
+              sapien. Quisque sodales imperdiet est ac ultricies. Quisque nisl
+              nunc, vulputate sed enim a, rutrum malesuada dui. Etiam et tempus
+              nunc. Nam urna metus, bibendum non gravida non, congue sit amet
+              ante. Aliquam erat volutpat. Integer hendrerit non diam quis
+              imperdiet. Nullam pulvinar ligula eu elit sagittis, a malesuada
+              sem placerat. Sed ut placerat ex. Orci varius natoque penatibus et
+              magnis dis parturient montes, nascetur ridiculus mus. In tempor
+              ligula vel lobortis ornare. Pellentesque viverra elementum neque,
+              vel facilisis elit efficitur vitae. Quisque commodo placerat
+              commodo. Sed auctor sit amet dolor at euismod. Pellentesque
+              habitant morbi tristique senectus et netus et malesuada fames ac
+              turpis egestas. Sed et ultricies metus. Vestibulum id magna nec
+              risus cursus consectetur in nec tortor. Aliquam congue felis urna.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- modales -->
+    <!-- modales TERMINOS -->
+    <div
+      class="modal fade"
+      id="modalTerminos"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalCenterTitle"
+      aria-hidden="true"
+      data-backdrop="static"
+    >
+      <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">
+              Política de Privacidad
+            </h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p class="text-justify">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+              malesuada lectus quis pretium convallis. Class aptent taciti
+              sociosqu ad litora torquent per conubia nostra, per inceptos
+              himenaeos. Etiam at interdum arcu, vitae placerat quam. Morbi ac
+              accumsan tellus, nec posuere risus. Quisque ac hendrerit turpis.
+              Vestibulum consequat nibh a tortor porttitor fermentum. Etiam eu
+              arcu et arcu pretium tincidunt. Nullam sem diam, lacinia interdum
+              enim non, pharetra auctor mauris. Sed sed posuere sapien, at
+              lacinia turpis. Fusce lacinia, purus ac tristique accumsan, massa
+              nulla aliquam metus, et consequat felis urna a dolor. Donec
+              laoreet dolor sit amet arcu gravida accumsan. In accumsan sed enim
+              eu elementum. Donec sit amet mattis nibh. Nunc rhoncus eget est
+              vitae sodales. Phasellus gravida justo id ipsum faucibus, in
+              malesuada diam consectetur. Vivamus volutpat interdum ipsum. Donec
+              ac elit nulla. Sed pulvinar congue lacinia. Aliquam erat volutpat.
+              Cras semper ipsum ut dui suscipit ultrices. Integer sed nibh sit
+              amet diam posuere sollicitudin. Ut nibh enim, volutpat at justo
+              id, luctus dignissim mi. Vestibulum mi augue, commodo et velit et,
+              cursus ultrices nisi. Maecenas eu rutrum diam. Ut sagittis ante
+              vel felis auctor, vitae mollis diam porttitor. Aenean in
+              condimentum nunc. Cras luctus at leo vitae iaculis. Aenean est
+              risus, maximus ut vehicula a, rutrum a urna. Nunc iaculis sapien
+              et arcu vulputate ultricies. Nam et nisl condimentum, porttitor
+              ligula ut, rutrum nulla. Pellentesque eu lacus a elit lacinia
+              faucibus. Nunc auctor magna at felis gravida feugiat. In auctor
+              neque sit amet enim rhoncus hendrerit. Nunc lobortis eros
+              efficitur purus dignissim, quis tristique velit pharetra.
+              Pellentesque aliquam vel dui et eleifend. Sed finibus elementum
+              ligula, in ultrices tortor semper a. Nam id magna eget tellus
+              ultricies vulputate a vel nunc. Class aptent taciti sociosqu ad
+              litora torquent per conubia nostra, per inceptos himenaeos.
+              Praesent sagittis odio nulla. Morbi scelerisque sapien ut mauris
+              sollicitudin, vitae efficitur augue maximus. Nunc maximus tellus
+              et dolor laoreet, sit amet varius dolor vehicula. Quisque semper
+              leo et diam rutrum tempus. Maecenas quis leo vel augue posuere
+              pellentesque. Nam luctus sem nec quam commodo commodo. Nam a
+              sollicitudin diam, vitae suscipit justo. Donec sagittis erat vitae
+              pulvinar aliquet. Integer auctor nisl pellentesque, viverra sem
+              at, molestie augue. Integer iaculis leo a laoreet molestie. In hac
+              habitasse platea dictumst. Nam libero turpis, molestie porttitor
+              libero vitae, sollicitudin varius lacus. Aliquam pulvinar blandit
+              dictum. Nulla convallis sodales lectus. Nullam vel tincidunt est,
+              sit amet malesuada enim.
+            </p>
+          </div>
+          <!-- <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div> -->
+        </div>
+      </div>
+    </div>
+    <!-- modales -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
