@@ -2,7 +2,10 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0,user-scalable=no"
+    />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link
       href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
@@ -18,9 +21,14 @@
     <title>HolaAndy</title>
   </head>
   <body class="p-0">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
-      <!-- <a class="navbar-brand" href="#"><img src="https://holaandy.com/assets/img/logo-andy.png?id=2019_01"/></a> -->
-      <a class="navbar-brand" href="#">HolaAndy</a>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-transparent d-none d-sm-none d-md-block">
+      <img
+        class="ml-5 position-absolute"
+        src="assets/img/logo-cdi.png"
+        width="170"
+        height="40"
+        alt=""
+      />
       <button
         class="navbar-toggler collapsed"
         type="button"
@@ -37,24 +45,27 @@
         id="navbarNavAltMarkup"
       >
         <div class="navbar-nav">
-          <a class="nav-item nav-link active" href="./index.html"
+          <a class="nav-item nav-link pr-5 active" href="./index.html"
             >INICIO<span class="sr-only">(current)</span></a
           >
-          <a class="nav-item nav-link" href="./como-funciona.html"
+          <a class="nav-item nav-link pr-5" href="./como-funciona.html"
             >CÓMO FUNCIONA</a
           >
-          <a class="nav-item nav-link" href="nosotros.html">NOSOTROS</a>
-          <a class="nav-item nav-link" href="blog.html">BLOG</a>
-          <a class="nav-item nav-link" href="ayuda.html">AYUDA</a>
-          <button class="btn h-25 p-1 bg-primary mt-1 text-white">Iniciar Sesión</button>
+          <a class="nav-item nav-link pr-5" href="nosotros.html">NOSOTROS</a>
+          <a class="nav-item nav-link pr-5" href="blog.html">BLOG</a>
+          <a class="nav-item nav-link pr-5" href="ayuda.html">AYUDA</a>
+          <!-- <button class="btn h-25 p-1 bg-primary mt-1 text-white">Iniciar Sesión</button> -->
         </div>
       </div>
     </nav>
     <div class="container-fluid">
       <div class="row" id="header">
         <div class="col-md-12 p-0">
-          <div class="portal-header">
+          <div class="portal-header w-100">
             <div class="row m-0 text-center text-white">
+              <div class=" d-block  d-sm-block d-md-none">
+                <button class="btn bg-primary rounded m-1 ml-3"><i class="fas fa-bars"></i></button>
+              </div>
               <div class="col-md-5 contenedor-header-left">
                 <h1>Préstamos en línea en 1 hora</h1>
                 <h5>
@@ -129,14 +140,18 @@
             <div class="col-md-4 p-4">
               <h4>Paso 1</h4>
               <div class="border-icon">
-                <i class="fas fa-money-bill-alt font-50 pt-4 text-secondary"></i>
+                <i
+                  class="fas fa-money-bill-alt font-50 pt-4 text-secondary"
+                ></i>
               </div>
               <h6 class="mt-3">Selecciona el importe</h6>
             </div>
             <div class="col-md-4 p-4">
               <h4>Paso 2</h4>
               <div class="border-icon">
-                <i class="fas fa-pencil-alt f-50  font-50 p-4 text-secondary"></i>
+                <i
+                  class="fas fa-pencil-alt f-50  font-50 p-4 text-secondary"
+                ></i>
               </div>
               <h6 class="mt-3">Completa el formulario</h6>
             </div>
@@ -267,49 +282,67 @@
           </div>
         </div>
       </div>
-      <div id="aspectos-legales" class="row bg-secondary text-white text-center p-4">
+      <div
+        id="aspectos-legales"
+        class="row bg-secondary text-white text-center p-4"
+      >
         <div class="col-12 pt-4">
-          <h3>Aspectos legales</h3>
-          <div class="row mt-5">
-            <div class="col-md-3">
-              <h6
-                class="pt-3 pb-3"
-                data-toggle="modal"
-                data-target="#modalPrivacidad"
+          <h3 class="title">¡MANTENTE AL TANTO!</h3>
+          <h5>
+            Recibe noticias y actualizaciones. ¡Suscríbete ya a nuestro
+            newsletter!
+          </h5>
+          <div class="input-group mb-3 w-md-25 div-content mt-4">
+            <input
+              type="email"
+              class="form-control "
+              placeholder="mail@example.com"
+              aria-label="Recipient's username"
+              aria-describedby="basic-addon2"
+            />
+            <div class="input-group-append">
+              <span
+                class="input-group-text bg-third text-white font-weight-bold"
+                id="basic-addon2"
+                >SUSCRÍBETE!</span
               >
-                Política de privacidad
-              </h6>
             </div>
-            <div class="col-md-3">
+          </div>
+          <div id="col-footer" class="row mt-5 w-75 div-content">
+            <div class="col-md-3 mb-4">
+              <div class="pie-1">
+                <img class="img-fluid mb-3 " src="assets/img/logo-cdi.png" />
+                <h6 class="h7  pt-3"><i class="far fa-envelope mr-2"></i>info@cdiproject.com</h6 >
+                <h6 class="h7 "><i class="far fa-building mr-2"></i>RUC 20601708141</h6 >
+                <h6 class="h7 pb-3"><i class="fas fa-university mr-2"></i>Registro SBS 1234</h6 >
+              </div>
+            </div>
+            <div class="col-md-3 mb-4">
+              <h5>EMPRESA</h5>
+              <div class="bt-underline"></div>
               <h6
                 class="pt-3 pb-3"
                 data-toggle="modal"
                 data-target="#modalTerminos"
               >
-                Términos y condiciones
+                Nuestra historia
               </h6>
             </div>
-            <div class="col-md-3">
-              <h6
-                class="pt-3 pb-3"
-                data-toggle="modal"
-                data-target="#modalReclamaciones"
-              >
-                Libro de reclamaciones
-              </h6>
+            <div class="col-md-3 mb-4">
+              <h5>SOPORTE</h5>
+              <div class="bt-underline"></div>
+              <h6 class="pt-3">Preguntas Frecuentes</h6>
+              <h6 class="pb-3">Contáctanos</h6>
             </div>
-            <div class="col-md-3">
-              <h6
-                class="pt-3 pb-3"
-                data-toggle="modal"
-                data-target="#modalMapa"
-              >
-                Mapa del Sitio
-              </h6>
+            <div class="col-md-3 mb-4">
+              <h5>OTROS</h5>
+              <div class="bt-underline"></div>
+              <h6 class="pt-3" data-toggle="modal" data-target="#modalReclamaciones" >Libro de reclamaciones</h6>
+              <h6 class="pb-3" data-toggle="modal" data-target="#modalMapa" >Mapa del Sitio</h6>
             </div>
           </div>
           <p class="footer-al pt-5">
-            Andy es un producto de Fintech, empresa registrada en la<span
+            CDI Project es un producto de Fintech, empresa registrada en la<span
               ><br />
               UIF de la Superintendencia de Banca, Seguros y AFP.</span
             >
@@ -344,121 +377,31 @@
           </div>
           <div class="modal-body font-12">
             <p class="text-justify">
-              La presente Política de Privacidad (en adelante la “Política”)
-              tiene por finalidad informarle la manera como Latin Fintech,
-              S.A.C. (en adelante “Latin Fintech”), con domicilio en Calle 2 de
-              Mayo 516, Oficina 704, Miraflores, Lima, Perú, y R.U.C. No.
-              20600828593, trata su información personal a través del Portal
-              “www.holaandy.com” (en adelante el “Portal”). La Política describe
-              toda la tipología de información personal que se recaba de sus
-              Usuarios, y todos los tratamientos que se realizan con dicha
-              información. El Usuario declara haber leído y aceptado de manera
-              previa y expresa la Política sujetándose a sus disposiciones. Para
-              efectos de esta Política toda referencia a “nos”, “nosotros”, o
-              “nuestra”, se refiere a Latin Fintech.
-              <ol>
-                <li>¿Qué información recolectamos?</li>
-                <p>Para navegar y hacer uso del Portal, un Usuario no requiere facilitar información personal. Sin embargo, el Portal
-                incorpora un formulario de registro voluntario que solicita al Usuario datos personales que permiten identificarlo,
-                contactarlo y localizarlo, la información solicitada es la siguiente:</p>
-                <ul>
-                  <li>Nombres completos.</li>
-                  <li>Apellidos completos.</li>
-                  <li>Correo electrónico.</li>
-                  <li>Tipo y número de documento de identidad.</li>
-                  <li>Fecha de nacimiento.</li>
-                  <li>Género.</li>
-                  <li>Dirección actual.</li>
-                  <li>Teléfono celular.</li>
-                  <li>Teléfono fijo.</li>
-                  <li>Ingresos netos mensuales aproximados.</li>
-                  <li>Estado civil.</li>
-                  <li>Número de hijos.</li>
-                  <li>Cuenta de Facebook.</li>
-                  <li>Banco del que es cliente el Usuario.</li>
-                  <li>Número de cuenta bancaria.</li>
-                  <li>Tipo de cuenta bancaria.</li>
-                </ul>
-                <li>Sobre la veracidad de la Información que recolectamos</li>
-                <p>El Usuario, al registrarse y utilizar el Portal, declara que toda la información proporcionada es verdadera, completa y
-                exacta. Cada Usuario es responsable por la veracidad, exactitud, vigencia y autenticidad de la información suministrada,
-                y se compromete a mantenerla debidamente actualizada.
-                
-                Sin perjuicio de lo anterior, el Usuario autoriza a Latin Fintech a verificar la veracidad de los datos personales
-                facilitados por el Usuario a través de información obtenida de fuentes de acceso público o entidades especializadas en
-                la provisión de dicha información.
-                
-                Latin Fintech no se hace responsable de la veracidad de la información que no sea de elaboración propia, por lo que
-                tampoco asume responsabilidad alguna por posibles daños o perjuicios que pudieran originarse por el uso de dicha
-                información.</p>
-                <li>¿Cómo conservamos su información personal?</li>
-                <p>De acuerdo a lo establecido en la Ley N° 29733, Ley de Protección de Datos Personales, y el Decreto Supremo N°
-                003-2013-JUS, por el que se aprueba el Reglamento de la Ley de Protección de Datos Personales (la “Ley”), Latin Fintech
-                informa a los Usuarios del Portal que todos los datos de carácter personal que nos faciliten serán incorporados a un
-                banco de datos, debidamente inscrito en la Dirección de Registro Nacional de Protección de Datos Personales, titularidad
-                de Latin Fintech.
-                
-                A través de la presente Política de Privacidad el Usuario da su consentimiento expreso para la inclusión de sus datos
-                personales en el mencionado banco de datos.
-                
-                Asimismo, Latin Fintech informa a los Usuarios que su información personal puede estar incluida en bancos de datos que
-                se encuentran alojados en el extranjero en virtud de contratos de servicios de almacenamiento de información que Latin
-                Fintech tiene suscritos con terceros proveedores de dichos servicios. El Usuario, al registrarse en la presente
-                plataforma manifiesta que está informado sobre la ubicación de dichos bancos de datos y autoriza el flujo
-                transfronterizo de su información personal de ser el caso.</p>
-                <li>¿Para qué utilizamos su información personal?</li>
-                <p>Los datos personales de los Usuarios del Portal son tratados con las siguientes finalidades:</p>
-                <ul>
-                  <li>Atender y procesar solicitudes de registro de Usuarios en el Portal.</li>
-                  <li>Gestionar y administrar las cuentas personales de los Usuarios, así como supervisar el comportamiento y la actividad
-                    del Usuario dentro del Portal.</li>
-                  <li>Evaluación crediticia para determinar el otorgamiento del financiamiento solicitado por el Usuario.</li>
-                  <li>Contactar al Usuario interesado en utilizar algún servicio ofrecido por el Portal, así como absolver sus consultas.
-                  </li>
-                  <li>Informar al Usuario sobre cambios administrativos o de funcionalidad tanto del Portal como de los medios de pago.
-                  </li>
-                  <li>Realizar estudios internos sobre los intereses, comportamientos y hábitos de conducta de los Usuarios a fin poder
-                    ofrecerles un mejor servicio de acuerdo a sus necesidades, con información que pueda ser de su interés.</li>
-                  <li>Gestionar llamadas recordatorias o preventivas, así como solicitudes de pago de financiamientos previamente
-                    otorgados compartiendo la información personal del Usuario con agencias de Cobranzas que mantengan una relación con
-                    Latin Fintech.</li>
-                  <li>Brindar un servicio al cliente más efectivo valiéndonos para ello del apoyo de proveedores de servicios tales como
-                    agencias de call center (terceros), empresas de marketing digital para la gestión de campañas comerciales y empresas
-                    de mensajería de voz personalizada e interactiva, mensajería vía mensajes de texto (SMS) y mensajería vía correo
-                    electrónico.</li>
-                  <li>Compartir los datos personales de los Usuarios con terceros tales como empresas que contribuyan a mejorar o
-                    facilitar la operatividad del Portal, servicios de transporte, medios de pago, compañías de seguros, gestores,
-                    empresas con negocios digitales de Internet tales como eCommerce y cualquier otra empresa que preste servicios o tenga
-                    acuerdos comerciales con Latin Fintech.</li>
-                </ul>
-                <p>Adicionalmente, los datos del Usuario serán utilizados con la finalidad de enviarle noticias, promociones, publicidad
-                  y novedades del Portal a través de comunicaciones periódicas que serán remitidas a la dirección de correo electrónico
-                  que el Usuario facilitó al momento de realizar el registro. Dichas comunicaciones serán consideradas solicitadas y no
-                  califican como “spam” bajo la normativa vigente.</p>
-                
-                <p>Del mismo modo, los datos del Usuario serán utilizados para el envío de comunicaciones comerciales de los
-                  establecimientos o comercios electrónicos afiliados a Latin Fintech.</p>
-                
-                <p>Latin Fintech informa al Usuario que una vez autorizado el envío de las mencionadas comunicaciones, tendrá la
-                  facultad de revocar el consentimiento prestado en cada una de las comunicaciones que reciba de Latin Fintech a través
-                  de un hipervínculo que se incorpora en todas las comunicaciones, o enviando una solicitud a la siguiente dirección de
-                  correo electrónico: info@holaandy.com.</p>
-                
-                <p>Los datos personales del Usuario también podrán ser compartidos con aquellas empresas vinculadas a Latin Fintech a
-                  fin de que reciba información sobre productos o servicios que puedan ser de su interés.</p>
-                
-                <p>El Usuario del Portal manifiesta expresamente que ha sido informado de todas las finalidades antes mencionadas y
-                  autoriza el tratamiento de sus datos personales con dichas finalidades.</p>
-                
-                <p>Latin Fintech le recuerda al Usuario que las finalidades de tratamiento de datos necesarias para la ejecución de la
-                  relación contractual que vincula al Usuario registrado y a Latin Fintech no requieren del consentimiento del mismo.
-                </p>
-                <li>¿Cómo resguardamos su información personal?</li>
-                <p>Latin Fintech adopta las medidas técnicas y organizativas necesarias para garantizar la protección de los datos de
-                carácter personal y evitar su alteración, pérdida, tratamiento y/o acceso no autorizado, habida cuenta del estado de la
-                técnica, la naturaleza de los datos almacenados y los riesgos a que están expuestos, todo ello, conforme a lo
-                establecido por la Ley N° 29733, Ley de Protección de Datos Personales, su Reglamento y la Directiva de Seguridad.</p>
-              </ol>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
+              blandit et magna aliquam interdum. Fusce dignissim ante tortor, ac
+              rutrum sem malesuada sed. Pellentesque habitant morbi tristique
+              senectus et netus et malesuada fames ac turpis egestas. Sed
+              tincidunt purus mauris, in dictum lorem commodo et. Ut ornare
+              sagittis enim, quis blandit justo pellentesque ac. Nulla facilisi.
+              Vestibulum et posuere nisl. Morbi odio ligula, faucibus eget odio
+              eu, rutrum finibus ipsum. Fusce pharetra lacus vel augue
+              condimentum aliquam. Donec vel nulla metus. Donec a augue
+              efficitur, ornare sem non, imperdiet elit. Vivamus ac molestie
+              quam, sed pretium ex. Pellentesque laoreet lacinia quam malesuada
+              hendrerit. Duis a tellus sodales, rutrum massa id, vestibulum
+              sapien. Quisque sodales imperdiet est ac ultricies. Quisque nisl
+              nunc, vulputate sed enim a, rutrum malesuada dui. Etiam et tempus
+              nunc. Nam urna metus, bibendum non gravida non, congue sit amet
+              ante. Aliquam erat volutpat. Integer hendrerit non diam quis
+              imperdiet. Nullam pulvinar ligula eu elit sagittis, a malesuada
+              sem placerat. Sed ut placerat ex. Orci varius natoque penatibus et
+              magnis dis parturient montes, nascetur ridiculus mus. In tempor
+              ligula vel lobortis ornare. Pellentesque viverra elementum neque,
+              vel facilisis elit efficitur vitae. Quisque commodo placerat
+              commodo. Sed auctor sit amet dolor at euismod. Pellentesque
+              habitant morbi tristique senectus et netus et malesuada fames ac
+              turpis egestas. Sed et ultricies metus. Vestibulum id magna nec
+              risus cursus consectetur in nec tortor. Aliquam congue felis urna.
             </p>
           </div>
         </div>
@@ -492,35 +435,49 @@
           </div>
           <div class="modal-body">
             <p class="text-justify">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc malesuada lectus quis pretium convallis. Class aptent
-              taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam at interdum arcu, vitae placerat
-              quam. Morbi ac accumsan tellus, nec posuere risus. Quisque ac hendrerit turpis. Vestibulum consequat nibh a tortor
-              porttitor fermentum. Etiam eu arcu et arcu pretium tincidunt. Nullam sem diam, lacinia interdum enim non, pharetra
-              auctor mauris. Sed sed posuere sapien, at lacinia turpis.
-              
-              Fusce lacinia, purus ac tristique accumsan, massa nulla aliquam metus, et consequat felis urna a dolor. Donec laoreet
-              dolor sit amet arcu gravida accumsan. In accumsan sed enim eu elementum. Donec sit amet mattis nibh. Nunc rhoncus eget
-              est vitae sodales. Phasellus gravida justo id ipsum faucibus, in malesuada diam consectetur. Vivamus volutpat interdum
-              ipsum. Donec ac elit nulla. Sed pulvinar congue lacinia. Aliquam erat volutpat. Cras semper ipsum ut dui suscipit
-              ultrices. Integer sed nibh sit amet diam posuere sollicitudin. Ut nibh enim, volutpat at justo id, luctus dignissim mi.
-              
-              Vestibulum mi augue, commodo et velit et, cursus ultrices nisi. Maecenas eu rutrum diam. Ut sagittis ante vel felis
-              auctor, vitae mollis diam porttitor. Aenean in condimentum nunc. Cras luctus at leo vitae iaculis. Aenean est risus,
-              maximus ut vehicula a, rutrum a urna. Nunc iaculis sapien et arcu vulputate ultricies. Nam et nisl condimentum,
-              porttitor ligula ut, rutrum nulla.
-              
-              Pellentesque eu lacus a elit lacinia faucibus. Nunc auctor magna at felis gravida feugiat. In auctor neque sit amet enim
-              rhoncus hendrerit. Nunc lobortis eros efficitur purus dignissim, quis tristique velit pharetra. Pellentesque aliquam vel
-              dui et eleifend. Sed finibus elementum ligula, in ultrices tortor semper a. Nam id magna eget tellus ultricies vulputate
-              a vel nunc. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent
-              sagittis odio nulla. Morbi scelerisque sapien ut mauris sollicitudin, vitae efficitur augue maximus. Nunc maximus tellus
-              et dolor laoreet, sit amet varius dolor vehicula. Quisque semper leo et diam rutrum tempus. Maecenas quis leo vel augue
-              posuere pellentesque. Nam luctus sem nec quam commodo commodo.
-              
-              Nam a sollicitudin diam, vitae suscipit justo. Donec sagittis erat vitae pulvinar aliquet. Integer auctor nisl
-              pellentesque, viverra sem at, molestie augue. Integer iaculis leo a laoreet molestie. In hac habitasse platea dictumst.
-              Nam libero turpis, molestie porttitor libero vitae, sollicitudin varius lacus. Aliquam pulvinar blandit dictum. Nulla
-              convallis sodales lectus. Nullam vel tincidunt est, sit amet malesuada enim.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+              malesuada lectus quis pretium convallis. Class aptent taciti
+              sociosqu ad litora torquent per conubia nostra, per inceptos
+              himenaeos. Etiam at interdum arcu, vitae placerat quam. Morbi ac
+              accumsan tellus, nec posuere risus. Quisque ac hendrerit turpis.
+              Vestibulum consequat nibh a tortor porttitor fermentum. Etiam eu
+              arcu et arcu pretium tincidunt. Nullam sem diam, lacinia interdum
+              enim non, pharetra auctor mauris. Sed sed posuere sapien, at
+              lacinia turpis. Fusce lacinia, purus ac tristique accumsan, massa
+              nulla aliquam metus, et consequat felis urna a dolor. Donec
+              laoreet dolor sit amet arcu gravida accumsan. In accumsan sed enim
+              eu elementum. Donec sit amet mattis nibh. Nunc rhoncus eget est
+              vitae sodales. Phasellus gravida justo id ipsum faucibus, in
+              malesuada diam consectetur. Vivamus volutpat interdum ipsum. Donec
+              ac elit nulla. Sed pulvinar congue lacinia. Aliquam erat volutpat.
+              Cras semper ipsum ut dui suscipit ultrices. Integer sed nibh sit
+              amet diam posuere sollicitudin. Ut nibh enim, volutpat at justo
+              id, luctus dignissim mi. Vestibulum mi augue, commodo et velit et,
+              cursus ultrices nisi. Maecenas eu rutrum diam. Ut sagittis ante
+              vel felis auctor, vitae mollis diam porttitor. Aenean in
+              condimentum nunc. Cras luctus at leo vitae iaculis. Aenean est
+              risus, maximus ut vehicula a, rutrum a urna. Nunc iaculis sapien
+              et arcu vulputate ultricies. Nam et nisl condimentum, porttitor
+              ligula ut, rutrum nulla. Pellentesque eu lacus a elit lacinia
+              faucibus. Nunc auctor magna at felis gravida feugiat. In auctor
+              neque sit amet enim rhoncus hendrerit. Nunc lobortis eros
+              efficitur purus dignissim, quis tristique velit pharetra.
+              Pellentesque aliquam vel dui et eleifend. Sed finibus elementum
+              ligula, in ultrices tortor semper a. Nam id magna eget tellus
+              ultricies vulputate a vel nunc. Class aptent taciti sociosqu ad
+              litora torquent per conubia nostra, per inceptos himenaeos.
+              Praesent sagittis odio nulla. Morbi scelerisque sapien ut mauris
+              sollicitudin, vitae efficitur augue maximus. Nunc maximus tellus
+              et dolor laoreet, sit amet varius dolor vehicula. Quisque semper
+              leo et diam rutrum tempus. Maecenas quis leo vel augue posuere
+              pellentesque. Nam luctus sem nec quam commodo commodo. Nam a
+              sollicitudin diam, vitae suscipit justo. Donec sagittis erat vitae
+              pulvinar aliquet. Integer auctor nisl pellentesque, viverra sem
+              at, molestie augue. Integer iaculis leo a laoreet molestie. In hac
+              habitasse platea dictumst. Nam libero turpis, molestie porttitor
+              libero vitae, sollicitudin varius lacus. Aliquam pulvinar blandit
+              dictum. Nulla convallis sodales lectus. Nullam vel tincidunt est,
+              sit amet malesuada enim.
             </p>
           </div>
           <!-- <div class="modal-footer">

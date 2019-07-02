@@ -17,6 +17,10 @@ $light: #fff;
   background-color: $secondary !important;
 }
 
+.bg-third {
+  background-color: $third !important;
+}
+
 .bg-dark {
   background-color: $dark !important;
 }
@@ -48,6 +52,10 @@ $light: #fff;
   font-size: 12px !important;
 }
 
+.h7{
+  font-size: 14px;
+}
+
 p,
 ul li {
   font-size: 14px !important;
@@ -59,6 +67,13 @@ ul li {
 
 .font-50 {
   font-size: 4.5em;
+}
+
+.bt-underline{
+  border-top: 3px solid $primary;
+  width: 60%;
+  margin: 0 auto
+  
 }
 
 .border-icon {
@@ -229,7 +244,7 @@ input[type="number"] {
 
 @media (max-width: 767.98px) {
   .portal-header {
-    height: 53.5em;
+    height: 56.5em;
   }
 
   .portal-header {
