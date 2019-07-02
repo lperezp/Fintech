@@ -137,6 +137,10 @@ input[type="number"] {
 #aspectos-legales h6 {
   cursor: pointer; }
 
+.img-blog {
+  margin: 4em;
+  width: 85.5% !important; }
+
 #menu-toggle {
   border-radius: 50%;
   padding: 5px 10px; }
@@ -183,7 +187,7 @@ input[type="number"] {
 
 @media (max-width: 767.98px) {
   .portal-header {
-    height: 56.5em;
+    height: 60em;
     padding-top: 4em; }
 
   .portal-nosotros {
@@ -210,16 +214,20 @@ input[type="number"] {
   .w-md-25 {
     width: 100%; }
 
-  /*  p,
-  ul li {
-    font-size: 11px !important;
-  } */ }
+  #blog {
+    width: 100%;
+    margin: 0 auto; }
+
+  .img-blog {
+    margin: 0em;
+    width: 100% !important; } }
 /*!
  * Start Bootstrap - Simple Sidebar (https://startbootstrap.com/template-overviews/simple-sidebar)
  * Copyright 2013-2019 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-simple-sidebar/blob/master/LICENSE)
  */
-body {
+body,
+#wrapper {
   overflow-x: hidden; }
 
 #sidebar-wrapper {
