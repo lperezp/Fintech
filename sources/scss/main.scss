@@ -1,0 +1,249 @@
+// COLOURS
+
+$primary: #12d0db;
+$secondary: #182b4d;
+$third: #ff9800;
+$dark: #3c3f46;
+$light: #fff;
+
+//BACKGROUND-COLOR
+
+.bg-primary {
+  background-color: $primary !important;
+}
+
+.bg-secondary {
+  background-color: $secondary !important;
+}
+
+.bg-dark {
+  background-color: $dark !important;
+}
+
+.bg-light {
+  background-color: $light !important;
+}
+
+// FONT COLOR
+
+.text-primary {
+  color: $primary !important;
+}
+
+.text-secondary {
+  color: $secondary !important;
+}
+
+.text-dark {
+  color: $dark !important;
+}
+
+.text-light {
+  color: $light !important;
+}
+
+// FONT SIZE
+.font-12 {
+  font-size: 12px !important;
+}
+
+p,
+ul li {
+  font-size: 14px !important;
+}
+
+.font-20 {
+  font-size: 20px;
+}
+
+.font-50 {
+  font-size: 4.5em;
+}
+
+.border-icon {
+  border-radius: 50%;
+  border: 3px solid $secondary;
+  height: 8em;
+  width: 8em;
+  margin: 0 auto;
+}
+
+.calculator a {
+  color: $light;
+  font-weight: bold;
+}
+.calculator a.menos {
+  border-radius: 50%;
+  background-color: $primary;
+  padding: 4px 12px;
+}
+
+.calculator a.mas {
+  border-radius: 50%;
+  background-color: $primary;
+  padding: 4px 9px;
+}
+
+// FONT-ALING
+
+.footer-al {
+  text-align: right;
+}
+
+.modal-body {
+  text-align: justify;
+  padding: 40px;
+}
+
+.modal-body ol {
+  padding-left: 0px !important;
+}
+
+// COMPONENTS
+#cambio {
+  input {
+    border: 0px !important;
+  }
+  input:focus {
+    border: 0px;
+    border-color: #fff;
+    box-shadow: 0 0px 0px rgba(0, 0, 0, 0.075) inset, 0 0 0px #fff;
+    outline: 0 none;
+  }
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.blackWhite {
+  filter: grayscale(100%);
+}
+
+.blackWhite:hover {
+  filter: grayscale(0%);
+}
+
+// ALIGN
+.div-content {
+  margin: 0 auto;
+}
+
+// LAYOUT
+
+.portal-header {
+  background-image: url("./../../assets/img/portal.jpg");
+  background-size: cover;
+  width: 100vw;
+  background-position: center;
+}
+
+.portal-nosotros {
+  background-image: url("./../../assets/img/08ccaf3.jpg");
+  background-size: cover;
+  width: 100vw;
+  background-position: center;
+}
+
+#header-nosotros {
+  padding: 3em;
+}
+
+.contenedor-header {
+  padding: 4em 5em;
+}
+
+#cambio div.monto {
+  height: 4.5em;
+  border: 1px solid $dark;
+  border-left: 5px solid $secondary;
+}
+
+#aspectos-legales h6 {
+  cursor: pointer;
+}
+
+// como-funciona.html
+#video .video-contenedor {
+  width: 35em;
+  height: 20em;
+  margin: 0 auto;
+}
+#video iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.tab-pane {
+  padding: 1em 3em;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  color: #fff !important;
+  background-color: $primary !important;
+  font-weight: bold;
+}
+
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+  color: $light !important;
+  background-color: $primary !important;
+  border-color: #dee2e6 #dee2e6 #fff;
+  font-weight: bold;
+}
+
+#v-pills-tabContent h4,
+.title {
+  padding-bottom: 0.5em;
+  border-bottom: 4px solid $primary;
+  margin-bottom: 1em;
+}
+
+.w-md-25 {
+  width: 25%;
+}
+
+.parrafo-nosotros {
+  padding: 2% 15%;
+}
+
+//RESPONSIVE MEDIA
+
+@media (max-width: 767.98px) {
+  .portal-header {
+    height: 49.5em;
+  }
+
+  .contenedor-header {
+    padding: 1em 3em 0em 3em;
+  }
+
+  p {
+    font-size: 11px !important;
+  }
+
+  .footer-al {
+    text-align: center;
+  }
+
+  #video .video-contenedor {
+    width: 20em;
+    height: 11em;
+  }
+
+  .w-md-25 {
+    width: 100%;
+  }
+
+  p,
+  ul li {
+    font-size: 11px !important;
+  }
+}
