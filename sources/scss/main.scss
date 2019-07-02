@@ -25,6 +25,10 @@ $light: #fff;
   background-color: $dark !important;
 }
 
+.bg-dark-trans {
+  background-color: hsla(0, 0%, 0%, 0.473) !important;
+}
+
 .bg-light {
   background-color: $light !important;
 }

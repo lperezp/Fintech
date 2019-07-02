@@ -10,6 +10,9 @@
 .bg-dark {
   background-color: #4c4d50 !important; }
 
+.bg-dark-trans {
+  background-color: rgba(0, 0, 0, 0.473) !important; }
+
 .bg-light {
   background-color: #fff !important; }
 
