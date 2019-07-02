@@ -1,23 +1,23 @@
 .bg-primary {
-  background-color: #12d0db !important; }
+  background-color: #50a1ff !important; }
 
 .bg-secondary {
   background-color: #182b4d !important; }
 
 .bg-dark {
-  background-color: #3c3f46 !important; }
+  background-color: #4c4d50 !important; }
 
 .bg-light {
   background-color: #fff !important; }
 
 .text-primary {
-  color: #12d0db !important; }
+  color: #50a1ff !important; }
 
 .text-secondary {
   color: #182b4d !important; }
 
 .text-dark {
-  color: #3c3f46 !important; }
+  color: #4c4d50 !important; }
 
 .text-light {
   color: #fff !important; }
@@ -48,12 +48,12 @@ ul li {
 
 .calculator a.menos {
   border-radius: 50%;
-  background-color: #12d0db;
+  background-color: #50a1ff;
   padding: 4px 12px; }
 
 .calculator a.mas {
   border-radius: 50%;
-  background-color: #12d0db;
+  background-color: #50a1ff;
   padding: 4px 9px; }
 
 .footer-al {
@@ -111,7 +111,7 @@ input[type="number"] {
 
 #cambio div.monto {
   height: 4.5em;
-  border: 1px solid #3c3f46;
+  border: 1px solid #4c4d50;
   border-left: 5px solid #182b4d; }
 
 #aspectos-legales h6 {
@@ -132,20 +132,20 @@ input[type="number"] {
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
   color: #fff !important;
-  background-color: #12d0db !important;
+  background-color: #50a1ff !important;
   font-weight: bold; }
 
 .nav-tabs .nav-item.show .nav-link,
 .nav-tabs .nav-link.active {
   color: #fff !important;
-  background-color: #12d0db !important;
+  background-color: #50a1ff !important;
   border-color: #dee2e6 #dee2e6 #fff;
   font-weight: bold; }
 
 #v-pills-tabContent h4,
 .title {
   padding-bottom: 0.5em;
-  border-bottom: 4px solid #12d0db;
+  border-bottom: 4px solid #50a1ff;
   margin-bottom: 1em; }
 
 .w-md-25 {
