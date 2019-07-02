@@ -92,7 +92,7 @@ input[type="number"] {
   margin: 0 auto; }
 
 .portal-header {
-  background-image: url("./../../assets/img/portal.jpg");
+  background-image: url("./../../assets/img/portal.png");
   background-size: cover;
   width: 100vw;
   background-position: center; }
@@ -106,8 +106,11 @@ input[type="number"] {
 #header-nosotros {
   padding: 3em; }
 
-.contenedor-header {
-  padding: 4em 5em; }
+.contenedor-header-left {
+  padding: 4em 2em 4em 15em; }
+
+.contenedor-header-right {
+  padding: 4em 15em 4em 2em; }
 
 #cambio div.monto {
   height: 4.5em;
@@ -158,7 +161,8 @@ input[type="number"] {
   .portal-header {
     height: 49.5em; }
 
-  .contenedor-header {
+  .contenedor-header-left,
+  .contenedor-header-right {
     padding: 1em 3em 0em 3em; }
 
   p {
