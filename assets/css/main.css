@@ -1,3 +1,7 @@
+@import url("https://fonts.googleapis.com/css?family=Patua+One&display=swap");
+.fontPatua {
+  font-family: "Patua One", cursive; }
+
 .bg-primary {
   background-color: #50a1ff !important; }
 
@@ -102,7 +106,7 @@ input[type="number"] {
   filter: grayscale(0%); }
 
 .div-content {
-  margin: 0 auto; }
+  margin: 0 auto !important; }
 
 .navbar {
   z-index: 1; }
@@ -168,6 +172,9 @@ input[type="number"] {
   color: #fff !important;
   background-color: #50a1ff !important;
   font-weight: bold; }
+
+.btn-rounded {
+  border-radius: 25em; }
 
 .card-header {
   background-color: #182b4d;

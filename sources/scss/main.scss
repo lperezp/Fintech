@@ -1,3 +1,10 @@
+// IMPORT FONT
+@import url("https://fonts.googleapis.com/css?family=Patua+One&display=swap");
+
+.fontPatua {
+  font-family: "Patua One", cursive;
+}
+
 // COLOURS
 
 $primary: #50a1ff;
@@ -150,7 +157,7 @@ input[type="number"] {
 
 // ALIGN
 .div-content {
-  margin: 0 auto;
+  margin: 0 auto !important;
 }
 
 // LAYOUT
@@ -233,6 +240,10 @@ input[type="number"] {
   color: #fff !important;
   background-color: $primary !important;
   font-weight: bold;
+}
+
+.btn-rounded {
+  border-radius: 25em;
 }
 
 .card-header {
