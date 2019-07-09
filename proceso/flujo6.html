@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0,user-scalable=no"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link href="./../assets/css/main.css" rel="stylesheet" />
+    <title>Registro | Demo CDI Project</title>
+  </head>
+
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <img src="./../assets/img/logo-cdi.png" class="img-header-logo" />
+        <div class="col-sm-10 div-content">
+          <div
+            style="margin-top: 88px; position: absolute;background-color: #868e96;width: 90%;height: 3px;"
+          >
+            .
+          </div>
+          <div
+            style="margin-top: 88px; position: absolute;background-color: #50a1ff;width: 90%;height: 3px;"
+          >
+            .
+          </div>
+          <div id="flujo" style="margin-top: 50px">
+            <div class="row">
+              <div class="col-3">
+                <img
+                  style="width: 6em"
+                  src="./../assets/img/esteban.jpg"
+                  class="img-fluid img-thumbnail rounded-circle"
+                />
+              </div>
+              <div class="col-3 text-center">
+                <img
+                  style="width: 6em"
+                  src="./../assets/img/uno.png"
+                  class="img-fluid img-thumbnail rounded-circle"
+                />
+              </div>
+              <div class="col-3 text-center">
+                <img
+                  style="width: 6em"
+                  src="./../assets/img/dos.png"
+                  class="img-fluid img-thumbnail rounded-circle"
+                />
+              </div>
+              <div class="col-3 text-right">
+                <img
+                  style="width: 6em"
+                  src="./../assets/img/tres.png"
+                  class="img-fluid img-thumbnail rounded-circle"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row div-content">
+          <div class="col-md-6 text-center div-content pt-5">
+            <div id="resultado">
+              <h2 class="fontPatua">
+                Enhorabuena! Tienes un crédito aprobado.
+              </h2>
+              <p class="font-weight-bold">
+                ¡Has calificado como cliente!
+              </p>
+              <button
+                class="btn btn-rounded bg-primary text-white font-weight-bold w-100"
+                data-toggle="modal"
+                data-target="#exampleModal"
+              >
+                Aceptar
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">
+              Términos del contrato
+            </h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+              tincidunt ultrices sapien, non lobortis odio gravida et. Phasellus
+              maximus pulvinar urna. Nam luctus et nulla id convallis. In sed
+              egestas tellus. Praesent eu ornare sem. Nullam sit amet porttitor
+              est, finibus ultrices ipsum. Nullam mattis felis justo, et
+              placerat erat hendrerit nec. Nulla commodo augue ligula, vel
+              hendrerit est euismod vel. Phasellus vel velit sodales lectus
+              blandit ultricies at ut eros. Nulla consectetur dolor in neque
+              fringilla lobortis. Sed elementum neque ut ex pharetra elementum.
+              Duis dapibus eros vel feugiat aliquet. Nullam molestie placerat
+              ipsum, in tempor quam congue vel. Morbi rutrum ipsum ut turpis
+              aliquam dignissim. Sed at diam pellentesque, posuere metus at,
+              venenatis sem.
+            </p>
+            <p>
+              Integer rhoncus, est eget imperdiet tempus, orci risus ultricies
+              sem, vel imperdiet turpis elit non orci. In ultricies ultrices
+              posuere. Donec auctor facilisis egestas. Phasellus ornare sem
+              nulla, accumsan interdum felis aliquet cursus. Integer quis
+              lacinia erat. Aliquam hendrerit nisl at felis facilisis interdum.
+              Etiam eget semper lacus, ut suscipit purus. Phasellus ac ipsum
+              quis orci dictum eleifend id vel augue. Maecenas mattis nisl at
+              urna luctus sodales. Donec at euismod dolor. Maecenas at erat sit
+              amet mauris interdum fringilla ut at lectus.
+            </p>
+            <p>
+              Mauris bibendum imperdiet porttitor. Phasellus blandit quam erat,
+              congue vehicula ante congue eget. Praesent id urna sed sapien
+              scelerisque ultrices. Aliquam vel enim ut felis sagittis placerat.
+              Phasellus scelerisque lectus mi, nec convallis sapien rhoncus nec.
+              Maecenas eu libero quam. Sed congue libero ac nibh rutrum
+              scelerisque. Aliquam sed purus est. Curabitur placerat feugiat
+              massa, eu placerat risus dapibus eu.
+            </p>
+            <p>
+              Sed egestas, est vitae iaculis ultrices, lectus orci placerat
+              nunc, vitae pulvinar ipsum lacus eget dolor. Sed faucibus mauris
+              in tellus molestie varius. Suspendisse vestibulum metus magna, nec
+              venenatis enim ultrices quis. Vestibulum bibendum nec felis quis
+              feugiat. Aliquam euismod tincidunt ante, et congue leo fringilla
+              at. Vivamus aliquet vel ante vel auctor. Aliquam tempus faucibus
+              mauris, eget varius leo ullamcorper in. Sed scelerisque, lacus at
+              maximus consequat, leo mi efficitur purus, nec volutpat sem est et
+              odio. Etiam nec erat metus. Cras condimentum felis iaculis diam
+              imperdiet, id consequat leo tincidunt. Nunc eleifend nibh eu orci
+              semper, id vehicula massa pharetra. Sed placerat magna in finibus
+              vestibulum.
+            </p>
+            <p>
+              Duis efficitur lacinia finibus. Cras ac arcu gravida, rhoncus nibh
+              ac, consectetur lorem. Ut quis bibendum libero, nec vulputate
+              nisi. Morbi a nulla dictum, efficitur ligula dapibus, sagittis
+              metus. Mauris vestibulum ut dui non consequat. Duis et dignissim
+              justo, vel consectetur lorem. Donec in ipsum sit amet justo
+              sollicitudin varius. Fusce aliquet nec tellus ut posuere.
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Cancelar
+            </button>
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-toggle="modal"
+              data-target="#exampleModal2"
+            >
+              Aceptar contrato
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="exampleModal2"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Ingrese el PIN</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form action="./../sesion/index.html">
+              <input type="number" class="form-control" required />
+              <label
+                ><input type="checkbox" required /> Enviar una copia del
+                contrato a mi correo electrónico</label
+              >
+              <button class="btn btn-rounded bg-primary text-white w-100 mt-3">
+                Verificar
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../assets/js/main.js"></script>
+  </body>
+</html>
