@@ -184,6 +184,13 @@ input[type="number"] {
   top: -56px;
 }
 
+.img-left {
+  background-image: url("./../../assets/img/prestamo.jpg");
+  background-size: cover;
+  height: 100vh;
+  background-position: center;
+}
+
 .contenedor-header-left {
   padding: 7em 2em 4em 15em;
 }
@@ -214,6 +221,11 @@ input[type="number"] {
 #menu-toggle {
   border-radius: 50%;
   padding: 5px 10px;
+}
+
+.form-p1 {
+  margin: 0 auto;
+  width: 90%;
 }
 
 // como-funciona.html
