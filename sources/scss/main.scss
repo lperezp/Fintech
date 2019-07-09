@@ -79,6 +79,11 @@ $light: #fff;
   font-size: 4.5em;
 }
 
+.icon-card {
+  font-size: 3.5em;
+  margin: 0.5rem;
+}
+
 .bt-underline {
   border-top: 3px solid $primary;
   width: 60%;
@@ -159,6 +164,9 @@ input[type="number"] {
 .div-content {
   margin: 0 auto !important;
 }
+.box-fono {
+  margin-left: 8em;
+}
 
 // LAYOUT
 
@@ -216,6 +224,11 @@ input[type="number"] {
 .img-blog {
   margin: 4em;
   width: 85.5% !important;
+}
+
+.img-header-logo {
+  width: 20%;
+  margin: 2em;
 }
 
 #menu-toggle {
@@ -316,6 +329,10 @@ input[type="number"] {
     text-align: center;
   }
 
+  .box-fono {
+    margin-left: 1em;
+  }
+
   #calculo {
     margin: 0.5em 0.5em 0.5em 0.5em;
   }
@@ -337,6 +354,11 @@ input[type="number"] {
   .img-blog {
     margin: 0em;
     width: 100% !important;
+  }
+
+  .img-header-logo {
+    width: 50%;
+    margin: 2em;
   }
 }
 
