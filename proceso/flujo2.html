@@ -43,9 +43,6 @@
                   style="width: 6em"
                   src="./../assets/img/esteban.jpg"
                   class="img-fluid img-thumbnail rounded-circle"
-                  data-toggle="tooltip"
-                  data-placement="top"
-                  title="Felicitaciones! Tenemos hasta S/. 1,000 para ti."
                 />
               </div>
               <div class="col-3 text-center">
@@ -72,85 +69,28 @@
             </div>
           </div>
           <div class="row pt-3" id="formulario">
-            <div class="col-md-12 text-center div-content pt-4">
+            <div class="col-md-4 text-center div-content pt-4">
               <div id="q1">
                 <p class="mt-3">Rafael, ¿cuál es tu estado civil?</p>
-                <div class="">
-                  <div class="row">
-                    <div class="col-md-2">
-                      <button
-                        class="btn bg-light border mb-2 w-100"
-                        (click)="elegir(d)"
-                      >
-                        Soltero
-                      </button>
-                    </div>
-                    <div class="col-md-2">
-                      <button
-                        class="btn bg-light border mb-2 w-100"
-                        (click)="elegir(d)"
-                      >
-                        Conviviente
-                      </button>
-                    </div>
-                    <div class="col-md-2">
-                      <button
-                        class="btn bg-light border mb-2 w-100"
-                        (click)="elegir(d)"
-                      >
-                        Casado
-                      </button>
-                    </div>
-                    <div class="col-md-2">
-                      <button
-                        class="btn bg-light border mb-2 w-100"
-                        (click)="elegir(d)"
-                      >
-                        Divorciado
-                      </button>
-                    </div>
-                    <div class="col-md-2">
-                      <button
-                        class="btn bg-light border mb-2 w-100"
-                        (click)="elegir(d)"
-                      >
-                        Viudo
-                      </button>
-                    </div>
-                  </div>
-                </div>
+                  <select class="form-control form-contrl-sm mt-3 div-content">
+                    <option>Soltero</option>
+                    <option>Conviviente</option>
+                    <option>Casado</option>
+                    <option>Divorciado</option>
+                    <option>Viudo</option>
+                  </select>
               </div>
               <div id="q2">
                 <p class="mt-3">
                   ¿Cuántas persona dependen económicamente de ti?
                 </p>
-                <div class="row">
-                  <div class="col-md-2">
-                    <button class="btn bg-light border mb-2 w-100">
-                      Ninguna
-                    </button>
-                  </div>
-                  <div class="col-md-2">
-                    <button class="btn bg-light border mb-2 w-100">
-                      Una
-                    </button>
-                  </div>
-                  <div class="col-md-2">
-                    <button class="btn bg-light border mb-2 w-100">
-                      Dos
-                    </button>
-                  </div>
-                  <div class="col-md-2">
-                    <button class="btn bg-light border mb-2 w-100">
-                      Tres
-                    </button>
-                  </div>
-                  <div class="col-md-2">
-                    <button class="btn bg-light border mb-2 w-100">
-                      Más de tres
-                    </button>
-                  </div>
-                </div>
+                <select class="form-control form-contrl-sm mt-3 div-content">
+                  <option>Ninguna</option>
+                  <option>Una</option>
+                  <option>Dos</option>
+                  <option>Tres</option>
+                  <option>Más de tres</option>
+                </select>
               </div>
               <div id="q3">
                 <p class="mt-3">
@@ -158,23 +98,28 @@
                 </p>
                 <input
                   type="text"
-                  class="form-control form-control-sm pl-5 div-content w-75"
+                  class="form-control form-control-sm"
                 />
-                <div id="comboDireccion" class="row pl-3 pr-3">
+                <div id="comboDireccion" class="row">
                   <div class="col-md-4">
-                    <select class="form-control form-contrl-sm mt-3">
+                    <select class="form-control form-contrl-sm mt-3" data-toggle="tooltipDep"
+                  data-placement="top"
+                  title="Eliga un departamento.">
                       <option>Lima</option>
                       <option>Piura</option>
                     </select>
                   </div>
                   <div class="col-md-4">
-                    <select class="form-control form-contrl-sm mt-3">
+                    <select class="form-control form-contrl-sm mt-3" data-toggle="tooltipProv"
+                  data-placement="top"
+                  title="Eliga una provincia.">
                       <option>Lima</option>
-                      <option>Piura</option>
                     </select>
                   </div>
                   <div class="col-md-4">
-                    <select class="form-control form-contrl-sm mt-3">
+                    <select class="form-control form-contrl-sm mt-3" data-toggle="tooltipDis"
+                  data-placement="top"
+                  title="Eliga un distrito">
                       <option>Barranco</option>
                       <option>Comas</option>
                     </select>
@@ -185,19 +130,15 @@
                 <p class="mt-3">
                   ¿Qué nivel de estudio alcanzaste?
                 </p>
-                <button class="btn bg-light border mb-2">Primaria</button>
-                <button class="btn bg-light border mb-2">Secundaria</button>
-                <button class="btn bg-light border mb-2">
-                  Instituto técnico
-                </button>
-                <button class="btn bg-light border mb-2">
-                  Universitaria completa
-                </button>
-                <button class="btn bg-light border mb-2">
-                  Universidad completa
-                </button>
-                <button class="btn bg-light border mb-2">Maestría</button>
-                <button class="btn bg-light border mb-2">Doctorado</button>
+                <select class="form-control form-contrl-sm mt-3">
+                  <option>Primaria</option>
+                  <option>Secundaria</option>
+                  <option>Instituto técnico</option>
+                  <option>Universitaria incompleta</option>
+                  <option>Universitaria completa</option>
+                  <option>Maestria</option>
+                  <option>Doctorado</option>
+                </select>
               </div>
               <div id="q5">
                 <p class="mt-3">
@@ -211,7 +152,7 @@
               <form action="./flujo3.html" class="w-100">
                 <button
                   type="submit"
-                  class="btn btn-rounded bg-primary text-white font-weight-bold w-25 btn-rounded mt-3 mb-5"
+                  class="btn btn-rounded bg-primary text-white font-weight-bold btn-rounded mt-3 mb-5"
                 >
                   Continuar
                 </button>

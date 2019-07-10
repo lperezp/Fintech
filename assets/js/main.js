@@ -12,25 +12,12 @@ $(function() {
 
   // TOOLTIP
   $('[data-toggle="tooltip"]').tooltip("show");
+  $('[data-toggle="tooltipDis"]').tooltip();
+  $('[data-toggle="tooltipProv"]').tooltip();
+  $('[data-toggle="tooltipDep"]').tooltip();
 });
 
 function elegir(boton) {
   boton.toggleClass("bg-primary");
   boton.toggleClass("bg-light");
 }
-
-// EVENTO CLICK
-/* $("#formulario .btn").click(function(e) {
-  e.preventDefault();
-  console.log("ddd");
-  $("#formulario .btn").toggleClass("bg-primary");
-  $("#formulario .btn").toggleClass("bg-light");
-}); */
-
-document.documentElement.addEventListener(
-  "touchmove",
-  function(event) {
-    event.preventDefault();
-  },
-  false
-);
