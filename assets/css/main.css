@@ -181,7 +181,8 @@ input[type="number"] {
 
 .img-header-logo {
   width: 15%;
-  margin: 2em; }
+  margin: 2em;
+  z-index: 1; }
 
 #menu-toggle {
   border-radius: 50%;
