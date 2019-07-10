@@ -123,7 +123,7 @@
           </div>
           <div id="form" class="row mb-5 w-75 div-content">
             <div class="col-md-12">
-              <form class="m-5">
+              <form class="m-5" action="">
                 <div class="form-row">
                   <div class="form-group col-md-6">
                     <label for="inputEmail4">Nombres</label>
@@ -132,6 +132,7 @@
                       class="form-control"
                       id="inputEmail4"
                       placeholder="Nombres"
+                      required
                     />
                   </div>
                   <div class="form-group col-md-6">
@@ -141,6 +142,7 @@
                       class="form-control"
                       id="inputPassword4"
                       placeholder="Apellidos"
+                      required
                     />
                   </div>
                   <div class="form-group col-md-6">
@@ -150,6 +152,7 @@
                       class="form-control"
                       id="inputEmail4"
                       placeholder="Email"
+                      required
                     />
                   </div>
                   <div class="form-group col-md-6">
@@ -159,6 +162,7 @@
                       class="form-control"
                       id="inputPassword4"
                       placeholder="Nro de contacto"
+                      required
                     />
                   </div>
                 </div>
@@ -179,11 +183,12 @@
                       class="form-control"
                       id="inputCity"
                       placeholder="Ciudad"
+                      required
                     />
                   </div>
                   <div class="form-group col-md-4">
                     <label for="inputState">Provincia</label>
-                    <select id="inputState" class="form-control">
+                    <select id="inputState" class="form-control" required>
                       <option selected>Elegir...</option>
                       <option>...</option>
                     </select>
@@ -195,6 +200,7 @@
                       class="form-control"
                       id="inputZip"
                       placeholder="Código postal"
+                      required
                     />
                   </div>
                 </div>
@@ -203,6 +209,7 @@
                     class="form-control mb-4"
                     rows="5"
                     placeholder="Escriba su mensaje aquí."
+                    required
                   ></textarea>
                 </div>
                 <div class="col-md-12 text-center">
@@ -278,13 +285,11 @@
                 <div class="col-md-3 mb-4">
                   <h5>OTROS</h5>
                   <div class="bt-underline"></div>
-                  <h6
-                    class="pt-3"
-                    data-toggle="modal"
-                    data-target="#modalReclamaciones"
-                  >
-                    Libro de reclamaciones
-                  </h6>
+                  <a href="./contactanos.html" class="text-white">
+                    <h6 class="pt-3">
+                      Contáctanos
+                    </h6>
+                  </a>
                   <!-- <h6 class="pb-3" data-toggle="modal" data-target="#modalMapa">
                     Mapa del Sitio
                   </h6> -->
