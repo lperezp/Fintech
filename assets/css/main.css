@@ -87,13 +87,16 @@
 .modal-body ol {
   padding-left: 0px !important; }
 
-#cambio input {
-  border: 0px !important; }
-#cambio input:focus {
-  border: 0px;
-  border-color: #fff;
-  box-shadow: 0 0px 0px rgba(0, 0, 0, 0.075) inset, 0 0 0px #fff;
-  outline: 0 none; }
+#cambio {
+  /*  input:focus {
+    border: 0px;
+    border-color: #fff;
+    box-shadow: 0 0px 0px rgba(0, 0, 0, 0.075) inset, 0 0 0px #fff;
+    outline: 0 none;
+  } */ }
+  #cambio input {
+    border: 1px !important;
+    padding: 10px; }
 
 input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
