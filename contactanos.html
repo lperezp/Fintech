@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0,user-scalable=no"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link href="./assets/css/main.css" rel="stylesheet" />
+    <title>Life123 | Demo CDI Project</title>
+  </head>
+
+  <body class="p-0">
+    <div class="d-flex toggled" id="wrapper">
+      <!-- Sidebar -->
+      <div class="bg-light  " id="sidebar-wrapper">
+        <div class="sidebar-heading">
+          <img src="assets/img/logo-cdi.png" width="200px" />
+        </div>
+        <div class="list-group list-group-flush">
+          <a
+            href="index.html"
+            class="list-group-item list-group-item-action bg-light"
+            >INICIO</a
+          >
+          <a
+            href="como-funciona.html"
+            class="list-group-item list-group-item-action bg-light"
+            >COMO FUNCIONA</a
+          >
+          <a
+            href="nosotros.html"
+            class="list-group-item list-group-item-action bg-light"
+            >NOSOTROS</a
+          >
+          <a
+            href="blog.html"
+            class="list-group-item list-group-item-action bg-light"
+            >BLOG</a
+          >
+          <a
+            href="ayuda.html"
+            class="list-group-item list-group-item-action bg-light"
+            >AYUDA</a
+          >
+        </div>
+      </div>
+      <!-- /#sidebar-wrapper -->
+
+      <!-- Page Content -->
+      <div id="page-content-wrapper">
+        <nav
+          class="navbar navbar-expand-lg navbar-dark bg-transparent d-none d-sm-none d-md-block"
+        >
+          <img
+            class="ml-5 position-absolute"
+            src="assets/img/logo-cdi.png"
+            width="170"
+            height="40"
+            alt=""
+          />
+          <button
+            class="navbar-toggler collapsed"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="navbar-collapse justify-content-end collapse"
+            id="navbarNavAltMarkup"
+          >
+            <div class="navbar-nav">
+              <a class="nav-item nav-link pr-5" href="./index.html"
+                >INICIO<span class="sr-only">(current)</span></a
+              >
+              <a class="nav-item nav-link pr-5" href="./como-funciona.html"
+                >CÓMO FUNCIONA</a
+              >
+              <a class="nav-item nav-link pr-5" href="nosotros.html"
+                >NOSOTROS</a
+              >
+              <a class="nav-item nav-link pr-5" href="blog.html">BLOG</a>
+              <a class="nav-item nav-link pr-5 active" href="ayuda.html"
+                >AYUDA</a
+              >
+              <!-- <button class="btn h-25 p-1 bg-primary mt-1 text-white">Iniciar Sesión</button> -->
+            </div>
+          </div>
+        </nav>
+
+        <div class="container-fluid">
+          <div class="row" id="header">
+            <div class="col-md-12 p-0 header-div">
+              <div class="portal-nosotros w-100">
+                <div class="row m-0 text-center text-white">
+                  <div class=" d-block  d-sm-block d-md-none">
+                    <button id="menu-toggle" class="btn bg-primary m-1 ml-3">
+                      <i class="fas fa-bars text-white"></i>
+                    </button>
+                  </div>
+                  <div class="col-md-12 contenedor-header-center">
+                    <h1>Contáctanos</h1>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="form" class="row mb-5 w-75 div-content">
+            <div class="col-md-12">
+              <form class="m-5">
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label for="inputEmail4">Nombres</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="inputEmail4"
+                      placeholder="Nombres"
+                    />
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label for="inputPassword4">Apellidos</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="inputPassword4"
+                      placeholder="Apellidos"
+                    />
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label for="inputEmail4">Email</label>
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="inputEmail4"
+                      placeholder="Email"
+                    />
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label for="inputPassword4">Nro. de Contacto</label>
+                    <input
+                      type="tel"
+                      class="form-control"
+                      id="inputPassword4"
+                      placeholder="Nro de contacto"
+                    />
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="inputAddress">Dirección</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="inputAddress"
+                    placeholder="Dirección"
+                  />
+                </div>
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label for="inputCity">Ciudad</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="inputCity"
+                      placeholder="Ciudad"
+                    />
+                  </div>
+                  <div class="form-group col-md-4">
+                    <label for="inputState">Provincia</label>
+                    <select id="inputState" class="form-control">
+                      <option selected>Elegir...</option>
+                      <option>...</option>
+                    </select>
+                  </div>
+                  <div class="form-group col-md-2">
+                    <label for="inputZip">Código Postal</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="inputZip"
+                      placeholder="Código postal"
+                    />
+                  </div>
+                </div>
+                <div class="col-md-12 p-0 text-center">
+                  <textarea
+                    class="form-control mb-4"
+                    rows="5"
+                    placeholder="Escriba su mensaje aquí."
+                  ></textarea>
+                </div>
+                <div class="col-md-12 text-center">
+                  <button
+                    type="submit"
+                    class="btn bg-primary text-white w-25 btn-rounded"
+                  >
+                    Enviar
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div
+            id="aspectos-legales"
+            class="row bg-secondary text-white text-center p-4"
+          >
+            <div class="col-12 pt-4">
+              <h3 class="title">¡MANTENTE AL TANTO!</h3>
+              <h5>
+                Recibe noticias y actualizaciones. ¡Suscríbete ya a nuestro
+                newsletter!
+              </h5>
+              <div class="input-group pb-3 w-md-25 div-content pt-4">
+                <input
+                  type="email"
+                  class="form-control "
+                  placeholder="mail@example.com"
+                  aria-label="Recipient's username"
+                  aria-describedby="basic-addon2"
+                />
+                <div class="input-group-append">
+                  <span
+                    class="input-group-text bg-third text-white font-weight-bold"
+                    id="basic-addon2"
+                    >SUSCRÍBETE!</span
+                  >
+                </div>
+              </div>
+              <div id="col-footer" class="row mt-5 w-75 div-content">
+                <div class="col-md-3 mb-4">
+                  <div class="pie-1">
+                    <img
+                      class="img-fluid mb-3 "
+                      src="assets/img/logo-cdi.png"
+                    />
+                    <h6 class="h7  pt-3">
+                      <i class="far fa-envelope mr-2"></i>info@cdiproject.com
+                    </h6>
+                    <h6 class="h7 ">
+                      <i class="far fa-building mr-2"></i>RUC 20601708141
+                    </h6>
+                    <h6 class="h7 pb-3">
+                      <i class="fas fa-university mr-2"></i>Registro SBS 1234
+                    </h6>
+                  </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                  <h5>EMPRESA</h5>
+                  <div class="bt-underline"></div>
+                  <a href="./nosotros.html" class="text-white">
+                    <h6 class="pt-3 pb-3">Nuestra historia</h6>
+                  </a>
+                </div>
+                <div class="col-md-3 mb-4">
+                  <h5>SOPORTE</h5>
+                  <div class="bt-underline"></div>
+                  <a href="./ayuda.html" class="text-white">
+                    <h6 class="pt-3">Preguntas Frecuentes</h6>
+                  </a>
+                  <!-- <h6 class="pb-3">Contáctanos</h6> -->
+                </div>
+                <div class="col-md-3 mb-4">
+                  <h5>OTROS</h5>
+                  <div class="bt-underline"></div>
+                  <h6
+                    class="pt-3"
+                    data-toggle="modal"
+                    data-target="#modalReclamaciones"
+                  >
+                    Libro de reclamaciones
+                  </h6>
+                  <!-- <h6 class="pb-3" data-toggle="modal" data-target="#modalMapa">
+                    Mapa del Sitio
+                  </h6> -->
+                </div>
+              </div>
+              <small class="footer-al pt-5">
+                CDI Project es un producto de Fintech, empresa registrada en la
+                UIF de la Superintendencia de Banca, Seguros y AFP.
+              </small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /#page-content-wrapper -->
+    </div>
+    <!-- /#wrapper -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
