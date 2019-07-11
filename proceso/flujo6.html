@@ -71,7 +71,7 @@
           </div>
         </div>
         <div class="row div-content">
-          <div class="col-md-6 text-center div-content pt-5">
+          <div class="col-md-12 text-center div-content pt-5">
             <div id="resultado">
               <h2 class="fontPatua">
                 Enhorabuena! Tienes un crédito aprobado.
@@ -79,14 +79,42 @@
               <p class="font-weight-bold">
                 ¡Has calificado como cliente!
               </p>
-              <button
-                class="btn btn-rounded bg-primary text-white font-weight-bold w-100"
-                data-toggle="modal"
-                data-target="#exampleModal"
-              >
-                Aceptar
-              </button>
+              <p>Monto solicitado: S/. 500.00</p>
+              <div class="table-responsive">
+                <table class="table table-sm">
+                  <thead class="bg-primary">
+                    <tr>
+                      <th>DNI</th>
+                      <th>Monto</th>
+                      <th>Moneda</th>
+                      <th>Fecha</th>
+                      <th>Cuenta</th>
+                      <th>Banco</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>75642354</td>
+                      <td>500.00</td>
+                      <td>Nuevos Soles</td>
+                      <td>10-07-19</td>
+                      <td><input type="text" class="form-control form-control-sm"  data-toggle="tooltip" data-placement="left" title="Coloque su número de cuenta y eliga su banco."  ></td>
+                      <td><select class="form-control form-control-sm"   >
+                        <option>Interbank</option>
+                        <option>BBVA</option>
+                      </select></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
             </div>
+            <button
+              class="btn btn-rounded bg-primary text-white font-weight-bold pl-4 pr-4"
+              data-toggle="modal"
+              data-target="#exampleModal"
+            >
+              Aceptar
+            </button>
           </div>
         </div>
       </div>
